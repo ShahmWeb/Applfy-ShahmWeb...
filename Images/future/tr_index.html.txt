@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>APPLFY</title>
+        <link rel="stylesheet" href="Css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <!-- Start Landing Page Section -->
+
+        <!-- Start HoverTop Section -->
+        <div class="hoverTop">
+            <i class="fa fa-arrow-up fa-1x arow"></i>
+        </div>
+        <!-- End HoverTop Section -->
+
+        <!-- Start Loading Page Section -->
+        <div class="LoadingPage">
+            <img src="Images/loading-image.jpg" class="loading-image">
+            <div class="loading-page">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <span class="loading">Yükleniyor...</span>
+            </div>
+        </div>
+        <!-- End Loading Page Section -->
+
+        <!-- Start Scroller Section -->
+        <div class="scroller"></div>
+        <!-- End Scroller Section -->
+
+        <!-- Start Left Section -->
+        <div class="left-section">
+
+            <h1 class="dashboard">Ana</h1>
+
+            <!-- Start Title Page Section -->
+            <div class="title">
+                <a href="#">
+                    <img src="Images/logo.webp" alt="">
+                    <span class="title-header">Applfy.</span>
+                </a>
+            </div>
+            <!-- End Title Page Section -->
+
+            <!-- Start Box Light Section -->
+            <div class="box-light">
+                <div class="dark">
+                    <i class="fa fa-moon-o"></i>
+                </div>
+                <div class="light">
+                    <i class="fa fa-sun-o"></i>
+                </div>
+            </div>
+            <!-- End Box Light Section -->
+
+            <!-- Start Linkes Section -->
+            <ul class="links">
+                <li>
+                    <a href="#" class="active aboutus" data-section=".about-us">
+                        <i class="fa fa-th-large"></i>
+                        Hakkýmýzda
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section=".box-statistics" class="statistices">
+                        <i class="fa fa-bar-chart"></i>
+                        Ýstatistik
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section=".our-states" class="ourstates">
+                        <i class="fa fa-pie-chart"></i>
+                        Eyaletlerimiz
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section=".our-servieses" class="ourservieses">
+                        <i class="fa fa-cogs"></i>
+                        Hizmetler
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section=".our-working" class="ourworking">
+                        <i class="fas fa-clipboard-check"></i>
+                        Ýþimiz
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section=".contact-us" class="contactus">
+                        <i class="fas fa-envelope"></i>
+                        bize Ulaþýn
+                    </a>
+                </li>
+                <li>
+                    <a href="categoreis.html" class="category">
+                        <i class="fas fa-folder-open"></i>
+                        Kategoriler
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html" class="plans">
+                        <i class="fas fa-sitemap"></i>
+                        planlar
+                    </a>
+                </li>
+            </ul>
+            <!-- End Box Light Section  -->
+            
+            <img class="image-last" src="Images/upgrade.webp" alt="">
+        </div>
+        <!-- End Left Section -->
+
+        <!-- Start Right Main Section -->
+        <div class="right-main-section">
+            <div class="main-section">
+                <div class="header">
+                    <h1 class="dashboard">Ana</h1>
+                    <div class="title title-none">
+                        <a href="#">
+                            <img src="Images/logo.webp" alt="">
+                            <span class="title-header">Applfy.</span>
+                        </a>
+                    </div>
+                    <div class="search-input">
+                        <a href="#" class="search-icon">
+                            <i class="fa fa-search"></i>
+                        </a>
+                        <input type="search" placeholder="Ara" class="input">
+                    </div>
+                    <div class="language-box">
+                        <i class="fa fa-language setting fa-2x"></i>
+                        <ul class="language">
+                            <li><a href="#"><img src="Images/sa.svg" alt="">Arabic</a></li>
+                            <li><a href="#"><img src="Images/gb.svg" alt=""> English</a></li>
+                            <li><a href="#"><img src="Images/tr.svg" alt=""> Turkish</a></li>
+                        </ul>
+                    </div>
+                    <div class="box-light">
+                        <div class="dark">
+                            <i class="fa fa-moon-o"></i>
+                        </div>
+                        <div class="light">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                    </div>
+                    <div class="closeOpen-button">
+                        <div class="section1"></div>
+                        <div class="section2"></div>
+                        <div class="section3"></div>
+                    </div>
+                </div>
+                <div class="about-us">
+                    <h2 class="helloLetters">ShahmWeb'e Hoþ Geldiniz.</h2>
+                    <p>Ben, ön uç programlama ve blog þablonu tasarýmýnda uzmanlaþmýþ bir web programcýsý olan Ahmad Shahm Sardini. SEO, bakým ve dijital pazarlama konularýnda da iyiyim.</p>
+                    <div class="points">
+                        <div class="point1"></div>
+                        <div class="point2"></div>
+                        <div class="point3"></div>
+                        <div class="point4"></div>
+                        <div class="point5"></div>
+                        <div class="point6"></div>
+                        <div class="point7"></div>
+                        <div class="point8"></div>
+                        <div class="point9"></div>
+                        <div class="point10"></div>
+                    </div>
+                </div>
+                <div class="working-boxes">
+                    <div class="box">
+                        <div class="box-header">
+                            <div class="select">
+                                <button>
+                                    <i class="fa fa-ellipsis-h fa-2x"></i>
+                                </button>
+                            </div>
+                            <h2>Toplam Baþvurular</h2>
+                        </div>
+                        <div class="content blue">
+                            <div class="data">
+                                <h2>5672</h2>
+                                <div class="bx">
+                                    <i class="up first">?</i>
+                                    <span>14% Inc +</span>
+                                </div>
+                            </div>
+                            <div class="cirecl">
+                                <div class="circular-progress1 circular-progress" style="background: conic-gradient( var(--main-color-lists) 0, var(--main-color) 0);"><span class="value-container1 value-container b-c">78%</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-header">
+                            <div class="select">
+                                <button>
+                                    <i class="fa fa-ellipsis-h fa-2x"></i>
+                                </button>
+                            </div>
+                            <h2>Kýsa Listedeki Adaylar</h2>
+                        </div>
+                        <div class="content orange">
+                            <div class="data">
+                                <h2>3045</h2>
+                                <div class="bx">
+                                    <i class="down second">?</i>
+                                    <span>06% Inc +</span>
+                                </div>
+                            </div>
+                            <div class="cirecl">
+                                <div class="circular-progress2 circular-progress" style="background: conic-gradient( var(--orange-color) 0, var(--main-color) 0);"><span class="value-container2 value-container b-c">65%</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-header">
+                            <div class="select">
+                                <button>
+                                    <i class="fa fa-ellipsis-h fa-2x"></i>
+                                </button>
+                            </div>
+                            <h2>Reddedilen Adaylar</h2>
+                        </div>
+                        <div class="content red">
+                            <div class="data">
+                                <h2>1055</h2>
+                                <div class="bx">
+                                    <i class="up last">?</i>
+                                    <span>04% Inc +</span>
+                                </div>
+                            </div>
+                            <div class="cirecl">
+                                <div class="circular-progress3 circular-progress" style="background: conic-gradient( var(--red-hover-color) 0, var(--main-color) 0);"><span class="value-container3 value-container b-c">40%</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-statistics">
+                    <div class="chart">
+                        <h3>Dil programlama becerileri</h3>
+                        <canvas id="barchart" width="200" height="200"></canvas>
+                    </div>
+                    <div class="chart">
+                        <h3>Beceri Ýstatistikleri</h3>
+                        <canvas id="doughnut" width="200" height="200"></canvas>
+                    </div>
+                </div>
+                <div class="our-states">
+                    <h2 class="main-title">Müthiþ Ýstatistiklerimiz</h2>
+                    <div class="content-our_states">
+                        <div class="box-our_states">
+                            <i class="fa fa-shopping-bag"></i>
+                            <div class="clients">
+                                <span>150</span>
+                            </div>
+                            <p>Müþteriler</p>
+                        </div>
+                        <div class="box-our_states">
+                            <i class="fa fa-project-diagram"></i>
+                            <div class="clients">
+                                <span>150</span>
+                            </div>
+                            <p>Projeler</p>
+                        </div>
+                        <div class="box-our_states">
+                            <i class="fa fa-globe-americas"></i>
+                            <div class="clients">
+                                <span>150</span>
+                            </div>
+                            <p>Ülkeler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="our-servieses">
+                    <div class="main-title">
+                        <h3>Hizmetler</h3>
+                    </div>
+                    <div class="servises-container">
+                        <div class="servies-box">
+                            <div class="des">
+                                <i class="fa fa-desktop-alt"></i>
+                                <p>Web sitesi tasarýmý</p>
+                            </div>
+                            <div class="number-datails">
+                                <span class="nums">01</span>
+                                <span class="det">Detaylar</span>
+                            </div>
+                        </div>
+                        <div class="servies-box">
+                            <div class="des">
+                                <i class="fa fa-globe"></i>
+                                <p>Web Sitesi Geliþtirme</p>
+                            </div>
+                            <div class="number-datails">
+                                <span class="nums">02</span>
+                                <span class="det">Detaylar</span>
+                            </div>
+                        </div>
+                        <div class="servies-box">
+                            <div class="des">
+                                <i class="fa fa-image"></i>
+                                <p>Blogger Þablon Tasarýmý</p>
+                            </div>
+                            <div class="number-datails">
+                                <span class="nums">03</span>
+                                <span class="det">Detaylar</span>
+                            </div>
+                        </div>
+                        <div class="servies-box">
+                            <div class="des">
+                                <i class="fas fa-bullhorn"></i>
+                                <p>Digital Marketing</p>
+                            </div>
+                            <div class="number-datails">
+                                <span class="nums">04</span>
+                                <span class="det">Detaylar</span>
+                            </div>
+                        </div>
+                        <div class="servies-box">
+                            <div class="des">
+                                <i class="fas fa-users"></i>
+                                <p>Sosyal Medya Yönetimi</p>
+                            </div>
+                            <div class="number-datails">
+                                <span class="nums">05</span>
+                                <span class="det">Detaylar</span>
+                            </div>
+                        </div>
+                        <div class="servies-box">
+                            <div class="des">
+                                <i class="fas fa-file-alt"></i>
+                                <p>Ýçerik yönetimi</p>
+                            </div>
+                            <div class="number-datails">
+                                <span class="nums">06</span>
+                                <span class="det">Detaylar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="our-working">
+                    <div class="contact-box">
+                        <div class="phone-icon">
+                            <i class="fa fa-ear-deaf fa-2x"></i>
+                        </div>
+                        <div class="content-contact">
+                            <p>çalýþmalarýmýzdan bazýlarý</p>
+                        </div>
+                    </div>
+                    <div class="ourWorking-boxes">
+                        <div class="box">
+                            <div class="image-project">
+                                <span class="button">önizlemesi</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image-project">
+                                <span class="button">önizlemesi</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image-project">
+                                <span class="button">önizlemesi</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image-project">
+                                <span class="button">önizlemesi</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image-project">
+                                <span class="button">önizlemesi</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image-project">
+                                <span class="button">önizlemesi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials">
+                    <h3 class="testimonial">Görüþler</h3>
+                    <div class="testimonial-boxes">
+                        <div class="testi-box">
+                            <h3 class="name">Ahmad Hassan</h3>
+                            <p>Geliþtirici Shahm, sunucuyla ilgilenme konusunda iyi bir web geliþtiricisidir.</p>
+                            <div class="preview">
+                                <span>Deðerlendirme:</span> 8/10
+                            </div>
+                        </div>
+                        <div class="testi-box">
+                            <h3 class="name">Shaddy Omar</h3>
+                            <p>Ýyi Tedavi Ýþçiliði</p>
+                            <div class="preview">
+                                <span>Deðerlendirme:</span> 9/10
+                            </div>
+                        </div>
+                        <div class="testi-box">
+                            <h3 class="name">Somaya Jafar</h3>
+                            <p>Çok Minnettar, Teþekkürler Shahm <i class="fa fa-smile"></i></p>
+                            <div class="preview">
+                                <span>Deðerlendirme:</span> 7/5
+                            </div>
+                        </div>
+                        <div class="testi-box">
+                            <h3 class="name">D.Mahmud Khalil</h3>
+                            <p>Tasarýmcý Shahm Gerçekten Yaratýcý ve Çalýþkan <i class="fa fa-smile-beam"></i></p>
+                            <div class="preview">
+                                <span>Deðerlendirme:</span> 10/10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="last-posted">
+                    <h3>Son Gönderi</h3>
+                    <div class="header-info">
+                        <img src="Images/user-1.webp" alt="">
+                        <div class="info">
+                            <p>A. Shahm Sardini</p>
+                            <span>Yaklaþýk 3 saat önce</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>Güzel Yorumlarýnýzla Teþvik Ettiðiniz Ýçin Çok Teþekkür Ederiz <i class="fa fa-smile"></i>, Her Zaman Güveniniz Olacaðým ve Þaþýrtýcý ve Yaratýcý Sonuçlar Göstermek Ýçin Çalýþmaktan Asla Vazgeçmeyeceðim.</p>
+                    </div>
+                    <div class="likes">
+                        <i class="li fa fa-heart-o"> 1.8K</i>
+                        <i class="fa fa-comments-o"> 500</i>
+                    </div>
+                </div>
+                <div class="dont-remind index">
+                    <div class="remind-boxes">
+                        <div class="remind-box">
+                            <img src="Images/icon.png" alt="">
+                        </div>
+                        <div class="remind-box">
+                            <i class="fa fa-map-marker"></i>
+                            <p>Türkiye, Istanbul, Esenyurt...</p>
+                        </div>
+                        <div class="remind-box">
+                            <i class="fa fa-clock-o"></i>
+                            <p>Çalýþma Saatleri: 10:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <div class="contact-box">
+                        <div class="phone-icon">
+                            <i class="fa fa-phone fa-2x"></i>
+                        </div>
+                        <div class="content-contact">
+                            <p>Bize Ulaþýn</p>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <div class="input-name">
+                            <input type="text" placeholder="...Adý" class="inpo">
+                        </div>
+                        <div class="input-phone">
+                            <input type="phone" placeholder="...Numara" class="inpo">
+                        </div>
+                        <div class="input-text">
+                            <input type="text" placeholder="...E-posta" class="inpo">
+                        </div>
+                        <div class="input-textarea">
+                            <textarea name="Message" placeholder="...Mesaj" class="inpo" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="send">
+                            <button>gönder</button>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <div class="facebook">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="whatsupp">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="telegram">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="profile">
+                    <i class="question fa fa-question-circle-o fa-2x"></i>
+                    <i class="fa fa-language setting fa-2x"></i>
+                    <img src="Images/user-1.webp" alt="">
+                    <i class="list fa fa-angle-down"></i>
+                </div>
+                <p class="message">Bizimle Ýletiþime Geçmek Ýster misiniz?!<a href="" class="clickHere">Buraya týklayýn</a></p>
+                <ul class="language">
+                    <li><a href="ar_index.html"><img src="Images/sa.svg" alt="">Arabic</a></li>
+                    <li><a href="index.html"><img src="Images/gb.svg" alt=""> English</a></li>
+                    <li><a href="#"><img src="Images/tr.svg" alt=""> Turkish</a></li>
+                </ul>
+                <ul class="listes">
+                    <li><a href="#"><i class="fa fa-user-circle"></i>profilim</a></li>
+                    <li><a href="#"><i class="fa fa-question-circle"></i> Ayarlar</a></li>
+                    <li><a href="#"><i class="fa fa-gears"></i>Yardýma ?</a></li>
+                    <li><a href="#"><i class="fa fa-sign-out-alt"></i>Çýkýþ</a></li>
+                </ul>
+                <div class="image-header">
+                    <img src="Images/user-2.webp" alt="">
+                    <p>Ahmad Shahm Sardini</p>
+                    <span>Ön Uç Geliþtirici</span>
+                    <p class="location"><i class="fa fa-map-marker"></i>Iatanbul, TR</p>
+                </div>
+                <div class="jobs-header">
+                    <h3>Tasarýmýnýzý Seçin</h3>
+                    <div class="box-add">
+                        <i class="add">+ Ekle</i>
+                        <i class="go fa fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="toggler">
+                    <div class="box">
+                        <div class="text">
+                            <p class="num">95</p>
+                            <p class="paragraph">Android geliþtiricisi
+                                <span>Toplam Baþvurular</span>
+                            </p>
+                        </div>
+                        <div class="toggle-switch">
+                            <div class="toggle-handl"></div>
+                        </div>
+                    </div>
+                    <div class="box box1">
+                        <div class="text text1">
+                            <p class="num num1">80</p>
+                            <p class="paragraph paragraph1">UX/UI tasarýmcý
+                                <span>Toplam Baþvurular</span>
+                            </p>
+                            <div class="toggle-switch">
+                                <div class="toggle-handl toggle-handl1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="files-statistics">
+                    <h3>Dosya Ýstatistikleri</h3>
+                    <div class="file-box">
+                        <i class="pdf pdf1 fa fa-file-code"></i>
+                        <div class="info">
+                            <span>PDF Dosyalar</span>
+                            <span class="number">130</span>
+                        </div>
+                        <div class="size">6.5GB</div>
+                    </div>
+                    <div class="file-box">
+                        <i class="pdf pdf2 fa fa-image"></i>
+                        <div class="info">
+                            <span>Görseller</span>
+                            <span class="number">115 Dosyalar</span>
+                        </div>
+                        <div class="size">3.5GB</div>
+                    </div>
+                    <div class="file-box">
+                        <i class="pdf pdf3 fa fa-file-word"></i>
+                        <div class="info">
+                            <span>Word Dosyalar</span>
+                            <span class="number">110 Dosyalar</span>
+                        </div>
+                        <div class="size">3.2GB</div>
+                    </div>
+                    <div class="file-box">
+                        <i class="pdf pdf4 fa fa-file-excel"></i>
+                        <div class="info">
+                            <span>CSV Dosyalar</span>
+                            <span class="number">99 Dosyalar</span>
+                        </div>
+                        <div class="size">2.9GB</div>
+                    </div>
+                    <a class="button-upload" href="#">
+                        <i class="fa fa-angles-up"></i>
+                        Yüklemek
+                    </a>
+                </div>
+                <div class="reminders-box">
+                    <div class="head">
+                        <h3>Hatýrlatýcýlar</h3>
+                        <i class="fa fa-bell-o"></i>
+                    </div>
+                        <div class="line file-box">
+                            <i class="pdf pdf1 icon1 fa fa-arrow-rotate-right"></i>
+                            <div class="info">
+                                <span>Aboneliðiniz bugün sona eriyor.
+                                    <p>Þimdi Yenile </p>
+                                </span>
+                            </div>
+                            <div class="size">6:30PM</div>
+                        </div>
+                        <div class="line file-box">
+                            <i class="pdf pdf1 icon2 fa fa-address-book-o"></i>
+                            <div class="info">
+                                <span>için 4 yeni Uygulama var
+                                    IOS Geliþtirici Yazýsý.</span>
+                            </div>
+                            <div class="size">6:30PM</div>
+                        </div>
+                        <div class="line file-box">
+                            <i class="pdf pdf1 icon3 fa fa-cancel"></i>
+                            <div class="info">
+                                <span>Þunun için iþ ilanýný kapattýnýz:
+                                    Tasarým yükü.</span>
+                            </div>
+                            <div class="size">6:30PM</div>
+                        </div>
+                        <div class="line file-box">
+                            <i class="pdf pdf1 icon4 fa fa-folder-open-o"></i>
+                            <div class="info">
+                                <span>Þunun için iþ gönderisini hazýrladýnýz:
+                                    Web Geliþtiricisi.</span>
+                            </div>
+                            <div class="size">6:30PM</div>
+                        </div>
+                </div>
+                <div class="testimonials">
+                    <h3 class="testimonial">Görüþler</h3>
+                    <div class="testimonial-boxes">
+                        <div class="testi-box">
+                            <h3 class="name">Ahmad Hassan</h3>
+                            <p>Geliþtirici Shahm, sunucuyla ilgilenme konusunda iyi bir web geliþtiricisidir.</p>
+                            <div class="preview">
+                                <span>Deðerlendirme:</span> 8/10
+                            </div>
+                        </div>
+                        <div class="testi-box">
+                            <h3 class="name">Shaddy Omar</h3>
+                            <p>Ýyi Tedavi Ýþçiliði</p>
+                            <div class="preview">
+                                <span>Deðerlendirme:</span> 9/10
+                            </div>
+                        </div>
+                        <div class="testi-box">
+                            <h3 class="name">Somaya Jafar</h3>
+                            <p>Çok Minnettar, Teþekkürler Shahm <i class="fa fa-smile"></i></p>
+                            <div class="preview">
+                                <span>Deðerlendirme:</span> 7/5
+                            </div>
+                        </div>
+                        <div class="testi-box">
+                            <h3 class="name">D.Mahmud Khalil</h3>
+                            <p>Tasarýmcý Shahm Gerçekten Yaratýcý ve Çalýþkan <i class="fa fa-smile-beam"></i></p>
+                            <div class="preview">
+                                <span>Deðerlendirme:</span> 10/10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="last-posted">
+                    <h3>Son Gönderi</h3>
+                    <div class="header-info">
+                        <img src="Images/user-1.webp" alt="">
+                        <div class="info">
+                            <p>A. Shahm Sardini</p>
+                            <span>Yaklaþýk 3 saat önce</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>Güzel Yorumlarýnýzla Teþvik Ettiðiniz Ýçin Çok Teþekkür Ederiz <i class="fa fa-smile"></i>, Her Zaman Güveniniz Olacaðým ve Þaþýrtýcý ve Yaratýcý Sonuçlar Göstermek Ýçin Çalýþmaktan Asla Vazgeçmeyeceðim.</p>
+                    </div>
+                    <div class="likes">
+                        <i class="li fa fa-heart-o"> 1.8K</i>
+                        <i class="fa fa-comments-o"> 500</i>
+                    </div>
+                </div>
+                <div class="dont-remind">
+                    <div class="remind-boxes">
+                        <div class="remind-box">
+                            <img src="Images/icon.png" alt="">
+                        </div>
+                        <div class="remind-box">
+                            <i class="fa fa-map-marker"></i>
+                            <p>Türkiye, Istanbul, Esenyurt...</p>
+                            <i class="fa fa-clock-o"></i>
+                            <p>Çalýþma Saatleri: 10:00 - 18:00</p>
+                        </div>
+                        <div class="remind-box">
+                            <div class="toContactUs">
+                                <i class="fa fa-hand-point-left toContactUs"></i>
+                                <span>Bizimle Ýletiþime Geçmeyi Unutmayýn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Landing Page Section -->
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+        <script src="Js/frameWork.js"></script>
+        <script src="Js/index.js"></script>
+    </body>
+</html>

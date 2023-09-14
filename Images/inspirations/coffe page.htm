@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+
+<!-- layout submain -->
+
+<!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/23699280.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	
+	
+
+
+	<style>
+		.main-menu >ul>li>a
+		{
+			color: #484D6D !important;
+		}
+		.login-now > a
+		{
+		      padding-right: 30px!important;
+		}
+	</style>
+	<meta charset="utf-8" />
+	<title>Coffee Landing Page Template</title>
+	<meta property='og:site_name' content='Sunny Landing Pages' />
+	<meta property='og:title' content='Coffee Landing Page Template' />
+	<meta name="Author" content="Landing Pages [www.sunnylandingpages.com]" />
+	
+
+	<!-- mobile settings -->
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+	
+	<link rel='stylesheet' type='text/css' href="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/css/googlefonts.css" />
+	<link rel='stylesheet' type='text/css' href="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/bootstrap/css/bootstrap.min.css" />
+	<!-- dataTables css for use in analytics page -->
+	<link rel="stylesheet" type='text/css' href="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/css/jquery.dataTables.min.css" />
+	<link rel='stylesheet' type='text/css' href="/themes/sunny/assets/css/font-awesome.css" />
+	<!--<link rel='stylesheet' type='text/css' href="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/owl-carousel/owl.carousel.css" />
+	<link rel='stylesheet' type='text/css' href="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/owl-carousel/owl.theme.css" />
+	<link rel='stylesheet' type='text/css' href="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/owl-carousel/owl.transitions.css" />-->
+	<link rel='stylesheet' type='text/css' href="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/magnific-popup/magnific-popup.css" />
+	<link rel='stylesheet' type='text/css' href="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/css/animate.css" />
+	<!--<link rel='stylesheet' type='text/css' href="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/css/superslides.css" />-->
+	<link rel='stylesheet' type='text/css' href="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/css/essentials.css" />
+	<link rel='stylesheet' type='text/css' href="/themes/sunny/assets/css/layout.css" />
+	<link rel='stylesheet' type='text/css' href="/themes/sunny/assets/css/layout-responsive.css" />
+	<link rel='stylesheet' type='text/css' href="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/css/color_scheme/orange.css" />
+	<!-- custon style sheet -->
+	<link rel='stylesheet' type='text/css' href="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/css/styles.css" />
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/modernizr.min.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){ 
+		$('.login-now').click(function(){
+			$("a[data-target='#sign-modal']").click();
+			});
+		var _scroll = true, _timer = false, _floatbox = $("#contact_form"), _floatbox_opener = $(".contact-opener") ;
+		_floatbox.css("right", "-300px"); //initial contact form position
+		
+		//Contact form Opener button
+		_floatbox_opener.click(function(){
+			if (_floatbox.hasClass('visiable')){
+	            _floatbox.animate({"right":"-300px"}, {duration: 300}).removeClass('visiable');
+	        }else{
+	           _floatbox.animate({"right":"0px"},  {duration: 300}).addClass('visiable');
+	        }
+		});
+		
+		//Effect on Scroll
+		$(window).scroll(function(){
+			if(_scroll){
+				_floatbox.animate({"top": "150px"},{duration: 300});
+				_scroll = false;
+			}
+			if(_timer !== false){ clearTimeout(_timer); }           
+				_timer = setTimeout(function(){_scroll = true; 
+				_floatbox.animate({"top": "150px"},{easing: "linear"}, {duration: 500});}, 400); 
+		});
+		
+		
+		//Ajax form submit
+	    $("#submit_btn").click(function() { 
+	        var proceed = true;
+	        //simple validation at client's end
+	        //loop through each field and we simply change border color to red for invalid fields       
+	        $("#contact_form input[required=true]").each(function(){
+	            $(this).css('border-color',''); 
+	            if(!$.trim($(this).val())){ //if this field is empty 
+	                $(this).css('border-color','red'); //change border color to red   
+	                proceed = false; //set do not proceed flag
+	            }
+	            //check invalid email
+	            var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
+	            if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
+	                $(this).css('border-color','red'); //change border color to red   
+	                proceed = false; //set do not proceed flag              
+	            }   
+	        });
+	       
+	        if(proceed) //everything looks good! proceed...
+	        {
+	            //get input field values data to be sent to server
+	            post_data = {
+	                'email'    : $('input[name=email]').val(),
+	                '_csrf'			: 'NUhYWmxDRzFQDQc7KCdwSGotLxUoAQ5bQWU9Py5zLkQCDjE.MyY.Ww=='
+	            };
+	            
+	            //Ajax post data to server
+	            $.post('/site/popupcontact', post_data, function(response){  
+	                if(response.type == 'error'){ //load json data from server and output message     
+	                    output = '<div class="error">'+response.text+'</div>';
+	                }else{
+	                    output = '<div class="success">'+response.text+'</div>';
+	                    //reset values in all input fields
+	                    $("#contact_form  input[required=true]").val(''); 
+	                }
+	                //$("#contact_form #contact_results").show().html(output).slideDown();
+	                $("#contact_form #contact_results").html(output);
+	            }, 'json');
+	        }
+	    });
+	    
+	    //reset previously set border colors and hide all message on .keyup()
+	    $("#contact_form  input[required=true]").keyup(function() { 
+	        $(this).css('border-color',''); 
+	        $("#result").slideUp();
+	    });
+		
+	});
+	</script>
+
+	<meta name="description" content="Use this coffee landing page template to increase leads">
+<meta name="robots" content="noodp">
+<meta property="keywords" content="DIY Landing Page Builder and Landing Page Templates">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sunnylandingpages.com/landing-page-template/coffee/">
+<meta property="og:image" content="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/images/open-graph.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/images/open-graph.jpg">
+<meta name="twitter:site" content="@sunny_pages">
+<meta name="twitter:creator" content="@sunny_pages">
+<meta name="twitter:title" content="Coffee | Sunny Landing Page Templates">
+<meta name="twitter:description" content="100+ responsive landing page templates designed to increase your conversions. Explore Sunny Landing Page templates. Publish for free.">
+<link href="https://sunnylandingpages.com/landing-page-template/coffee/" rel="canonical">
+<link href="/assets/f5cab0b6/css/bootstrap.css" rel="stylesheet">
+<link href="https://dmpqsifgr4vyp.cloudfront.net/css/site.css" rel="stylesheet">	<style>
+		header#topHead a{
+			color: #484D6D !important;
+		}
+		header#topHead, header#topNav{
+			background: #fff !important;
+		}
+		header#topNav.topHead {
+			top: 20px;
+			padding-bottom: 0px;
+		}
+		header#topHead {
+			height: 20px;
+		}
+			
+		header#topNav nav ul.nav-main .landing_pages .dropdown .dropbtn_1{
+			color: #484D6D;
+		}
+
+		.dropdown .dropbtn_1 {
+		  font-size: 16px;
+		  padding: 9px 16px;
+		  margin-top: 0px !important;
+		}
+		
+		.dropbtn_1 {margin-top: 0px !important;}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f9f9f9;
+		}
+		
+		.funnel_map:hover{
+			background-color: #eee !important;
+			border-radius: 4px 4px 0px 0px;
+		}
+		
+		.webinar_funnel:hover{
+			background-color: #eee !important;
+			border-radius: 4px 4px 0px 0px;
+		}
+		
+		.lead_magnet_funnel:hover{
+			background-color: #eee !important;
+			border-radius: 0px 0px 4px 4px;
+		}
+
+		.dropdown-content a {
+		  padding: 10px 16px;
+		  display: block;
+		}
+
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+		
+		.dropbtn_1:after {
+			content: ' \00276F';
+			font-size: 12px;
+		}
+	</style>
+</head>
+<body>
+   
+    <!-- Top Bar -->
+    		<header id="topHead" class="inner-hd1">
+			<div class="ribbon-wrapper-green hide"><div class="ribbon-green">Beta</div></div>
+			
+<!-- layout header ..appears in body -->
+
+
+<!-- 2nd Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLK6X4B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/23699280.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+
+
+
+<style>.async-hide { opacity: 0 !important} </style>
+
+
+
+
+
+	<!-- Start Tracker -->
+	<!-- <script type="text/javascript">
+		//<![CDATA[
+		var fd_baseUrl = 'https://app.funneldata.co/';
+		var fd_cmds = fd_cmds || [];
+		fd_cmds.push(['setSiteId', '8']);
+		fd_cmds.push(['trackPageView']);
+		//fd_cmds.push(['trackClicks']);
+		(function() {
+		var _fd = document.createElement('script'); _fd.type = 'text/javascript'; _fd.async = true;
+		_fd.src = fd_baseUrl + 'tracker.js';
+		var _fd_s = document.getElementsByTagName('script')[0]; _fd_s.parentNode.insertBefore(_fd, _fd_s);
+		}());
+		//]]>
+	</script> -->
+	<!-- End Code -->
+
+
+<style>
+.button:hover, .button:active, .button:focus
+{
+text-decoration:none;
+}
+
+.button:active
+{
+ line-height:28px;
+ margin-top:2px;
+}
+.button {
+    background-color: #57A773;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;    padding:0px 10px;  margin-right: 10px;
+    display:inline-block;
+    font-weight:bold!important;
+    line-height:30px;
+    border-radius: 3px;
+}
+</style>
+<div class="container">
+	<!-- PHONE/EMAIL -->
+	<!-- <span class="quick-contact pull-left">
+		<i class="fa fa-envelope"></i>
+		<span style="font-size: 13px;color:#484D6D">sunny@sunnylandingpages.com</span>-->
+		<!--<a class="hidden-xs" href="mailto:sunny@sunnylandingpages.com">sunny@sunnylandingpages.com</a>-->
+	<!-- </span>
+	-->
+	<!-- /PHONE/EMAIL -->
+			<script>
+		// var windowWidth = $(window).width();
+	// var windowHeight = $(window).height(); 
+  // window.intercomSettings = {
+    // app_id: "shigf1ft",
+	// browser_screen_resolution: windowWidth+" * "+windowHeight,
+  // };
+</script>
+<script>//(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/shigf1ft';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+	<!--Start of Zopim Live Chat Script-->
+<!--End of Zopim Live Chat Script-->	
+		<div class="modal fade in" id="upgrade-popup" tabindex="-1" role="dialog" style="overflow-y: hidden; display: none;" aria-hidden="false">
+<div class="modal-dialog modal-md">
+	<div class="modal-content" style="background-color: #fff;">
+			<div class="modal-header" style="background-color: #fff !important;">
+    <button type="button" id="upgrade-close" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 25px;margin: -2% -1% 0 0;">
+    <span aria-hidden="true" style="color: #333;">&times;</span></button>
+			<h4 style="" align="center" class="modal-title"> 
+				<span class="login-text" style="color: #333;">Almost There...</span>
+			</h4>
+		   </div>
+		
+		<div class="col-md-12 col-sm-12 col-xs-12 sign-wrapper" style="">
+    		<h5 align="center" style="padding-bottom: 5%;line-height:1.5em;">
+				Upgrade your account to get unlimited form data downloads in .csv format. Or, as a free-plan user, you can continue to get the data via individual email notification. 
+			</h5>
+			<div class="" style="padding-bottom: 5%;text-align: center;"><button type="submit" id="upgrade-your-account" class="btn btn-success btn-sm" style="">Upgrade Now</button></div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="modal fade in" id="refer-friend-popup-first" tabindex="-1" role="dialog" style="overflow-y: hidden; display: none;" aria-hidden="false">
+<div class="modal-dialog modal-md" style="width:800px;top:-100px;">
+	<div class="modal-content" style="background-color: #fff;">
+			<div class="modal-header" style="background-color: #fff !important;">
+    <button type="button" id="upgrade-close" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 25px;margin: -2% -1% 0 0;">
+    <span aria-hidden="true" style="color: #333;">&times;</span></button>
+			<h3 style="" align="center" class="modal-title"> 
+				<span class="login-text" style="color: #333;">Refer Friends, and EARN MONEY! </span>
+			</h3>
+		   </div>
+		
+		<div class="col-md-12 col-sm-12 col-xs-12 refer-friend-wrapper-first">
+    		
+			<div class="modal-body text-muted clearfix col-md-12 col-sm-12 col-xs-12 ptextblack" >	
+				<p>Our Tell-A-Friend program has now become a full blown affiliate program</p>
+
+				<p>When you refer friends or business owners, we will give you hefty commissions for the life of the customer. </p>
+
+				<p>Not just the first time they purchase from us, but EVERY TIME!</p>
+
+				<p>We believe in sharing the profits with you. This way, our pricing can stay it’s normal competitive price and the people you refer to us don’t pay extra just to make room for the affiliate program. This is the most fair way to do it for you, your friend, and us, too.</p>
+
+				<p>We will start you out at a 20% life-time commission. This is 20% of all revenue we make from your referral. But that’s not all – once you’ve signed up we’ll tell you how you can go as high as a 40% commission.</p>
+
+				<p>We’re going to pay out hundreds of thousands of dollars to our loyal customers. Not bad for just telling a friend about a great service like Sunny Landing Pages!
+				</p>
+				<p style="text-align: center;"> <strong>ACTIVATE your share link:</strong></p>
+				<p class="refer-friend-url" style="font-weight: bold;text-align: center; font-size: 16px;color: rgb(51,51,51);border: 1px solid;padding: 4px;background-color: lightgrey;" ></p>	
+				
+				<div class="form-group"> 
+					<div class="col-sm-offset-2 col-sm-8">
+					  <button type="submit" id="gotocreaterefer" class="btn btn-primary btn-block" >Yes, Activate my Share Link</button>
+					</div>
+				</div>
+			</div>			
+		</div>
+	
+	</div>
+</div>
+</div>
+
+<div class="modal fade in" id="refer-friend-popup" tabindex="-1" role="dialog" style="overflow-y: hidden; display: none;" aria-hidden="false">
+<div class="modal-dialog modal-md" style="width:800px;top:-50px;">
+	<div class="modal-content" style="background-color: #fff;">
+			<div class="modal-header" style="background-color: #fff !important;">
+    <button type="button" id="upgrade-close" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 25px;margin: -2% -1% 0 0;">
+    <span aria-hidden="true" style="color: #333;">&times;</span></button>
+			<h3 style="" align="center" class="modal-title"> 
+				<span class="login-text" style="color: #333;">Fill out the quick form to Activate your Affiliate Account</span>
+			</h3>
+		   </div>
+		
+		<div class="col-md-12 col-sm-12 col-xs-12 refer-friend-wrapper" >
+    		
+			<div class="modal-body text-muted clearfix col-md-12 col-sm-12 col-xs-12" >	
+				<p class="refer-friend-url" style="font-weight: bold;text-align: center; font-size: 16px;color: rgb(51,51,51);display:none;" ></p>	
+				 <form autocomplete="off" id="submit-refer-friend" action="#" method="post">
+					<input type="hidden" name="_csrf" value="NUhYWmxDRzFQDQc7KCdwSGotLxUoAQ5bQWU9Py5zLkQCDjE.MyY.Ww=="/>
+					 <div class="form-group">
+						<label class="control-label col-sm-4" for="refer-friend-username"><strong style="color:#333;">Your Affiliate Username will be:</strong></label>
+						<div class="col-sm-6 col-sm-offset-1">
+						  <input type="text" class="form-control" id="refer-friend-username" name="username" placeholder="Username" disabled>
+						</div>
+					  </div>
+					 
+					  <div class="form-group">
+						<label class="control-label col-sm-4" for="refer-friend-password"><strong style="color:#333;">Enter your password:</strong></label>
+						<div class="col-sm-6 col-sm-offset-1"> 
+						  <input type="password" class="form-control" minlength="4" name="password" id="refer-friend-password" placeholder="Enter password" required="required">
+						</div>
+					  </div>
+					  <div class="form-group">
+						<label class="control-label col-sm-4" for="refer-friend-paypal"><strong style="color:#333;"> Enter your paypal email ID: (This is where you will get paid)</strong></label>
+						<div class="col-sm-6 col-sm-offset-1">
+						  <input type="email" autocomplete="false" class="form-control" id="refer-friend-paypal" name="paypalemail"  placeholder="Enter paypal email" >
+						</div>
+					  </div>
+					  <div class="checkbox col-sm-offset-4 col-sm-7" style="font-size: 0.92em;">
+						<label>
+							<input type="checkbox" required="required" style="margin-top: 9px;margin-right: 16px;"> I agree with the affiliate <a style="text-decoration: underline;" target="_blank" href="https://idevaffiliate.sunnylandingpages.com/affiliate_terms.php">program terms</a>
+						</label>
+					  </div>
+					  <div class="form-group"> 
+						<div class="col-sm-offset-2 col-sm-8">
+						  <button type="submit"  class="btn btn-primary btn-block">Activate Account</button>
+						</div>
+					  </div>
+				</form>
+			</div>			
+		</div>
+	
+	</div>
+</div>
+</div>
+	
+<div class="modal fade in" id="refer-friend-popup-last" tabindex="-1" role="dialog" style="overflow-y: hidden; display: none;" aria-hidden="false">
+<div class="modal-dialog modal-md" style="width:700px;">
+	<div class="modal-content" style="background-color: #fff;">
+			<div class="modal-header" style="background-color: #fff !important;">
+    <button type="button" id="upgrade-close" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 25px;margin: -2% -1% 0 0;">
+    <span aria-hidden="true" style="color: #333;">&times;</span></button>
+			<h3 style="" align="center" class="modal-title"> 
+				<span class="login-text" style="color: #333;">Awesome. You’re all set!</span>
+			</h3>
+		   </div>
+		
+		<div class="col-md-12 col-sm-12 col-xs-12 refer-friend-wrapper-first">
+    		
+			<div class="modal-body text-muted clearfix col-md-12 col-sm-12 col-xs-12 ptextblack" >
+				</br>
+				<p style="font-size:18px;">You’re all set to Earn Money through your referrals now. Please look-out for our welcome email with some more details. </p>
+				</br>
+				<p style="text-align: center;font-size:22px;"> <strong>Get started by sharing your affiliate link with your friends</strong></p>
+				<p class="refer-friend-url" style="text-align:center;padding-top:10px;padding-bottom:10px;" ></p>	
+				
+				<div class="form-group" style="text-align: center;"> 
+					<div class="col-sm-12">
+					 
+						<!-- Go to www.addthis.com/dashboard to customize your tools -->
+						<div class="addthis_inline_share_toolbox" data-url="" data-title="Sunny Landing Pages | Builder | Create and Publish For Free" data-description="Create landing pages to increase your conversions. Build and publish for free. Optimize your ad campaign with our lead generation and opt in tools." data-media="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/images/open-graph.jpg"></div>
+             
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>
+</div>
+
+	<div class="vi-popup" style="display:none;">
+    <div class="vi-inner-container">
+        <div id="vi-close"><button class="btn" type="button"><span aria-hidden="true">x</span></button></div>
+		<iframe id="vi-iframe" width="650" height="400" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+        </div>
+   </div>
+	
+	<div class="pull-right nav signin-dd">
+				<div style="display:none;">
+			<a data-toggle="modal" data-target="#sign-modal" href="#">  <span>Login</span></a>
+			<a style="width:75px;color: white!important;" class="button" href="/user/register">Sign up</a>
+		</div>
+		<div class="modal fade" id="sign-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 style= "padding-left:2.2%" align="left" class="modal-title"> <span class="login-text">Login</span></h4>
+					</div>
+					<div class="modal-body text-muted clearfix">
+						<div class="col-sm-6 col-xs-12 sign-wrapper">
+							<!-- Nav tabs -->
+							<!-- <ul class="nav nav-pills text-center" role="tablist">
+								<li role="presentation" class="col-xs-6 active"><a href="#signin" role="tab" data-toggle="tab">Login</a></li>
+								<li role="presentation" class="col-xs-6 "><a href="#signup" role="tab" data-toggle="tab">Sign Up</a></li>
+							</ul>
+							-->
+														<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active margin-top30" id="signin">
+									<form id="login-form" action="/user/login" method="post" enctype="multipart/form-data">
+<input type="hidden" name="_csrf" value="NUhYWmxDRzFQDQc7KCdwSGotLxUoAQ5bQWU9Py5zLkQCDjE.MyY.Ww==">	
+									<div class="flash-error">  </div>				
+										<div class="form-group field-login-form-login required">
+
+<input type="text" id="login-form-login" class="form-control" name="login-form[login]" placeholder="Username">
+
+<div class="help-block"></div>
+</div>									<div>
+										<!-- password -->
+										<div class="form-group field-login-form-password required">
+
+<input type="password" id="login-form-password" class="form-control" name="login-form[password]" placeholder="Password">
+
+<div class="help-block"></div>
+</div>										<!-- submit button -->
+									</div>
+									<div class="checkbox" style="    font-size: 0.92em;"><!-- remmember -->
+										<label>
+											<input type="checkbox" /> Remember me 
+										</label>
+									</div>
+									<button type="submit" id="submit-login-form" class="btn btn-primary btn-block">Login</button>									<h4 class="text-center forget-pass"><a href="/user/forgot">Forgot password?</a></h4>
+									<!-- <p class="text-center">(New User? <span class="toggle-signup">Click here</span> to Register)</p>-->
+									</form>								</div>
+								<!-- 
+								<div role="tabpanel" class="tab-pane active" id="signup">
+														                
+
+					                <div class="row">
+					                	<h3 class="text-center"><strong>Create a Free Account</strong></h3>
+										<div class="col-xs-12 first_name">
+											<div class="form-group field-userattribute-first_name">
+
+<input type="text" id="userattribute-first_name" class="form-control" name="UserAttribute[first_name]" autofocus="autofocus" tabindex="1" placeholder="Name">
+
+<div class="help-block"></div>
+</div>										</div>
+										<!-- <div class="col-xs-6 last_name">
+											<div class="form-group field-userattribute-last_name">
+
+<input type="text" id="userattribute-last_name" class="form-control" name="UserAttribute[last_name]" tabindex="2" placeholder="Last Name">
+
+<div class="help-block"></div>
+</div>										</div>
+										-->
+										<!-- 
+										<div class="col-xs-12 email">
+											<div class="form-group field-register-form-email required">
+
+<input type="text" id="register-form-email" class="form-control" name="register-form[email]" tabindex="3" placeholder="Email">
+
+<div class="help-block"></div>
+</div>										</div>
+										<div class="col-xs-12 password">
+											<div class="form-group field-register-form-password required">
+
+<input type="password" id="register-form-password" class="form-control" name="register-form[password]" tabindex="4" placeholder="Password">
+
+<div class="help-block"></div>
+</div>										</div>
+										<div class="form-group field-register-form-offerdata">
+
+<input type="hidden" id="register-form-offerdata" class="form-control" name="register-form[offerdata]">
+
+<div class="help-block"></div>
+</div>									</div>
+					                <div class="checkbox"><!-- remmember -->
+										<!-- <label>
+											<input type="checkbox" required /> <p><small>By signing up, I agree to Sunny Landing Pages <a target="_blank" href="/site/termsconditions">Terms & Conditions*</a></small></p>
+										</label>
+									</div>
+									<input type="submit" id="submit-register" value="Start my FREE account" class="btn btn-primary btn-block" data-loading-text="Loading..." />
+					                								</div>
+								 -->
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12 social-connect">
+							<div class="or">OR</div>
+							<div align="center" style="width:75%;float:left;    padding-top: 18.7%;    padding-left: 4.8%;">
+								<a class="" href="/user/security/auth?authclient=google" >
+									<!-- 
+									<span ><img style="height:18px;width:18px; background:white;margin-top:-4px" src="http://sunny.sid/themes/sunny/assets/images/google-128.png" /></img></span>
+									<span style="font-weight:bold;font-size:0.8em">Sign up with Google</span>
+									-->
+									<img  style="width:75%" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/images/googlesignin.png" /></img>
+								</a>
+							</div>
+													</div>
+						<p class="bottom-create-account" style="display: none;">
+							<a class="color-white bold" href="/user/register">Sign up with email</a>						</p>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->		
+			</div>
+	
+
+	<div class="pull-right nav" >
+	
+				<!--
+		<a href="">About</a>
+		<a href="">Contact</a>
+		-->
+	</div>
+	
+</div>
+<script>
+	$(document).ready(function(){
+		$(".toggle-signup").click(function(){$("a[href='#signup']").trigger("click");});
+		$("a[data-target='#sign-modal']").click(function(){
+			$('html').css('overflow','hidden');
+		});
+		$('#sign-modal').on('hidden.bs.modal',function(){
+			$('html').css('overflow','auto');
+		});
+		$(".login-call").click(function(e){
+			e.preventDefault();
+			$(".signin-dd a").trigger("click");
+		});
+	});	
+	function logincall(val) {
+		//alert(val);
+		$(".field-register-form-offerdata input").val(val);
+		$("#sign-modal").addClass("offer-signup");
+		$("#submit-register").val("Start my account");
+		$(".signin-dd a").trigger("click");
+	}
+</script>
+		</header>
+		<!-- /Top Bar -->
+	
+	<!-- TOP NAV -->
+	 		<header id="topNav" class="topHead inner-hd2"><!-- remove class="topHead" if no topHead used! -->
+			<div class="container">
+
+			<!-- Mobile Menu Button -->
+			<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+				<i class="fa fa-bars"></i>
+			</button>
+
+			<!-- Logo text or image -->
+			<a class="logo" href="/dashboard">
+				<img src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/images/logo.png" alt="Sunny" />
+			</a>
+
+			<!-- Top Nav -->
+			<div class="navbar-collapse nav-main-collapse collapse pull-right">
+				<nav class="main-menu nav-main mega-menu ">
+					<ul class="nav nav-pills nav-main scroll-menu"><li class="landing_pages"><span class="dropdown">
+																<button class="dropbtn_1">Funnels</button>
+																<span class="dropdown-content" style="width: 150px; border-radius: 4px;">
+																	<a class="funnel_map" href="/diagram/dashboard" style="font-size: 12px; color: #0d1a2b; cursor: pointer;">Funnel Map Builder</a>
+																	<a class="webinar_funnel" href="/site/webinar-funnel-template" style="font-size: 12px; color: #0d1a2b; cursor: pointer; border-bottom: 1px solid #eee; border-radius: 4px 4px 0px 0px;">Webinar Funnel</a>
+																	<a class="lead_magnet_funnel" href="#" style="font-size: 12px; color: #0d1a2b; cursor: context-menu; text-decoration: none;">Lead Magnet Funnel (Coming Soon)</a>
+																</span>
+														   </span></li>
+<li><a href="/landing-page-templates/all">Landing Pages</a></li>
+<li><a href="/mailer/home" target="_blank">Emailers</a></li>
+<li><a href="/payment/pricing">Pricing</a></li>
+<li class="login-now"><a href="#">Login</a></li>
+<li id="signup"><a href="/user/register">Sign Up Free</a></li></ul>				</nav>
+			</div>
+			<!-- /Top Nav -->
+
+		</div>
+	</header>
+	
+	<!--<span class="" id="header_shadow"></span>-->
+	<!-- /TOP NAV -->
+	
+	<!-- WRAPPER -->
+	<div id="wrapper" class="inner-wrap">
+		<!-- contact form start -->
+		<!---->
+		<!--<div class="floating-form" id="contact_form">
+			<div class="contact-opener"><strong>Know  More</strong></div>
+		    <div class="floating-form-heading">Know more about Landing Page Science from Sunny</div>
+		    <div id="contact_results"></div>
+		    <div id="contact_body">
+		        <label><span>Email <span class="required">*</span></span>
+		        	<input type="email" name="email" required="true" class="input-field">
+		        </label>
+		        <label>
+		        	<span>&nbsp;</span><input type="submit" id="submit_btn" value="Let Me In!">
+		        </label>
+		    </div>
+		</div>-->
+		
+		<!---->
+		<style>#wrapper{background-color: rgba(244, 245, 247, .8);}
+
+.checklist >li
+{
+color:#484D6D!important;
+}
+
+p, h1, h2, h3, h4, h5, li, td, th, strong
+{
+color:#484D6D
+}
+
+
+
+.temp-button
+{
+	background-color: white!important;
+    border: 1px solid !important;
+    color: #57A773 !important;
+    font-weight: 700;
+    width: 75%;
+    font-size:14px;
+}
+
+.temp-button:hover, .temp-button:focus 
+{
+background-color: white!important;
+color: #F88335 !important;
+border: 1px solid !important;
+    
+}
+
+.img-related
+{
+width:270px;
+height:256px;
+border-bottom: 1px solid #e6e6e6;
+}
+.item-box
+{
+	height:474px;
+}
+.item-box-button { 
+    text-align:center; 
+}
+/**/
+.item-box-desc
+{
+	text-align:center;
+	
+	
+}
+.item-box-desc > p
+{ 
+   color:#484D6D;
+    margin-top:10px;
+}
+
+.item-box-desc h4 { 
+    font-size: 1.3em; 
+    color:#484D6D;
+    margin-top:10px;
+}
+/*
+.isotope-item{
+	display: none;
+}
+*/
+.item-box
+{
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+
+border:1px solid #e6e6e6;
+padding-bottom:5%;
+
+}
+.item-box figure
+{
+border-radius:0px;
+
+}
+
+
+
+.accordion
+{
+    width: 100%;
+    background: #eeeeee;
+    color:#484D6D;
+    margin-top:10%;
+    padding:3% 9%;
+    font-weight:600;
+    text-align:left;
+    border:1px solid #e6e6e6;
+}
+button.accordion:after
+{
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after
+{
+	 content: "\2212";
+	 
+}
+
+.template-category >li>a
+{
+	margin:2.5% 0%;
+	padding:5% 10% !important;
+	color:#484D6D
+}
+
+.template-category >li>a:hover
+{
+	color:#F88335;
+	background:white!important;
+}
+.template-category li.active a
+{
+	color:#F88335;
+	background:white!important;
+}
+
+ul.template-category
+{
+border-top:none!important;
+border-bottom:none!important;
+}
+</style>
+<section class="container top-no-header margin-top10"">
+	<div class="row">
+		
+		
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<h1 align="left" class="col-md-12" style=" font-family: 'Open Sans',Arial,sans-serif; font-size:24px; font-weight: 300 !important;">
+				Coffee			</h1>
+			
+			<p align="left" class="col-md-12" style=" font-family: 'Open Sans',Arial,sans-serif; font-size:16px; font-weight: 300 !important;">
+				A Cafe or Coffee Joint Landing Page Template for generating leads. Edit as required. Change the landing page elements as needed.			</p>
+			
+			<div class="col-md-12" style="align:left;margin-top:28px;margin-bottom:8px;">
+				<a class="" target="_blank" href="/editor/app/previewTemplate.php?loc=coffee.demopage.co">
+					<img height="36px" src="/themes/sunny/assets/images/mobile-icon2.png	"/>Mobile Preview</a>
+			</div>	
+			
+		</div>
+		
+		
+		<div class="col-md-1"></div>
+	</div>	
+		<div class="row">
+
+		<div class="col-md-1"></div>
+		<div class="col-md-7">
+			
+			
+			
+
+						
+			<div class="text-center col-md-12">
+				<img alt="Coffee" class="img-responsive desc-border" style="    border: 1px solid #e6e6e6; display: inline;"
+				 	src="https://dmpqsifgr4vyp.cloudfront.net/template/Coffee/image.png" width="100%" />
+			</div>
+			
+			
+				
+			
+		</div>			
+
+		
+		<!-- right bar - start -->
+		 <div class="col-md-3">
+		 <div  align="left" style="color:#484D6D!important;margin:auto;  " class="col-md-12">
+		 <ul class="checklist" style="color:#484D6D!important;font-size:14px;list-style-type: disc ; padding-left:0px;margin-bottom:0px">
+			 <li>Fast loading</li>
+			 <li>Mobile responsive </li>
+			 <li>Edit using drag and drop builder and add custom images, text and forms</li>
+			 <li>Host for free or download HTML</li>
+			 <!-- &#x2714  -->
+
+			
+
+		 </ul>
+		</div>	
+		
+		
+		<!-- USE TEMPLATE BUTTON-->
+			<div  align="center" style="margin:auto; margin-top:22px;" class="col-md-12">
+				
+													<a class="btn btn-primary btn-lg login-call temp-button" href="" style="width:100%;">USE TEMPLATE</a>
+							</div>
+			
+			<!-- USE TEMPLATE BUTTON - end-->
+			
+			
+			<!-- Download HTML BUTTON-->
+			<!-- <div  align="center" style="margin:auto; margin-top:22px;" class="col-md-12">
+				
+													<a class="btn btn-primary btn-lg login-call temp-button" href="" style="width:100%;">DOWNLOAD HTML</a>
+							</div>
+			 -->
+			<!-- Download HTML BUTTON - end-->
+
+			<p align="center" class="col-md-12" style="margin-top:22px;color: #F88335!important; font-family: 'Open Sans',Arial,sans-serif; font-size:14px; font-weight: 300 !important;">
+			
+								<a href="/landing-page-templates/lead-generation">Lead Generation</a>
+					
+					 | 					<a href="/landing-page-templates/food-and-beverage">Food and Beverage</a>
+					
+								</p>
+			
+			
+		</div>
+		<div class="col-md-1"></div>		
+		
+
+		
+		
+		
+	</div>
+	<div class="row" style = "margin-top:60px">	
+			<div class="col-md-1"></div>
+			<!--  WYSIWYG PAGE TEXT - START -->
+			<div style="padding: 0 3%;color: #484D6D;" class="col-md-10">
+				<p style="text-align: justify;"><span style="font-size: 12pt;"><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;">Coffee Landing Page Template.</span></span></p><hr /><h2 style="text-align: justify;"><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;">About the Category</span></h2><p style="text-align: justify;"><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;">Food &amp; Beverages industry has both things in surplus - demand &amp; supply. You should stand out of the crowd, and prove yourself different from all the other players in your market. These templates have been designed to perfectly suit your business needs, generate leads, and grow your business.</span></p><hr /><h2 style="text-align: justify;"><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;">Testimonials</span></h2><p><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Sunny's here to save the day</strong></span></p><p style="text-align: justify;"><a href="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/5-star.png"><img class="alignnone wp-image-882 " src="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/5-star-300x56.png" alt="5-star" width="144" height="27" /></a></p><p style="text-align: justify;"><span style="font-size: 12pt;"><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;">'Easy to use templates that fit perfect on getting leads for your business. Give it a try. Highly recommend Sunny Landing Page'<br /></span><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;"><strong>Sophia , Organic Farm Products Marketer<br /><br /></strong></span></span></p><p style="text-align: justify;"><strong><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; line-height: 25px;">Quick Design.</span></strong></p><p style="text-align: justify;"><a href="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/5-star.png"><img class="alignnone wp-image-882 " src="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/5-star-300x56.png" alt="5-star" width="144" height="27" /></a></p><p style="text-align: justify;"><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;">'Beautiful and quick design and online support is efficient</span><span style="font-size: 12pt;"><span style="font-family: arial, helvetica, sans-serif;">'<br /></span><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;"><strong>Emily, Small Business Owner<br /><br /></strong></span></span></p><p style="text-align: justify;"><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Great Product &amp; Service!</strong></span></p><p style="text-align: justify;"><a href="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/5-star.png"><img class="alignnone wp-image-882 " src="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/5-star-300x56.png" alt="5-star" width="144" height="27" /></a></p><p style="text-align: justify;"><span style="font-size: 12pt;"><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;">'I would personally recommend Sunny Landing Pages to anybody with or without experience'<br /></span><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;"><strong>Joshua, Cafe Owner</strong></span></span></p><hr /><h2 style="text-align: justify;"><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;">Tech Specs</span></h2><ul style="text-align: justify;"><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Created Date:</strong> February 2019</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Browser Compatibility:</strong>&nbsp;IE, Firefox, Safari, Chrome and Opera</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>HTML Template:</strong>&nbsp;Available for Download</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Layout:</strong>&nbsp;Mobile Responsive</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Drag &amp; Drop Editing:</strong>&nbsp;Yes. Edit anything on the page without having to write any code</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Documentation:</strong>&nbsp;Yes</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Support:</strong>&nbsp;Yes. Reach us via the intercom chat or email</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Integrations:</strong>&nbsp;500+ apps via Zapier or direct integrations using embed codes</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Custom Domain:</strong>&nbsp;Yes</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Free Hosting:</strong>&nbsp;Yes. See Pricing page for details</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Contact Forms:</strong>&nbsp;Yes</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Testimonials:</strong>&nbsp;Yes</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Lead Management:</strong>&nbsp;Yes. Notifications and/or CSV&nbsp; download</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Conversion Analytics:</strong>&nbsp;Yes. Advanced Visitor Data Analytics</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Fast Loading:</strong>&nbsp;Yes. Minimal load time</span></li><li><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>Device Ready:</strong>&nbsp;Yes. Full responsive in Desktop, Mobile and Tablet</span></li></ul><p style="text-align: justify;"><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;"><img class="alignnone wp-image-860 size-large" src="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/pexels-photo-872958a-1024x375.jpeg" alt="User FAQs for Landing Pages" width="904" height="331" /></span></p><h2 style="text-align: justify;"><span style="font-family: arial, helvetica, sans-serif;">FAQs for Building Landing Pages:</span></h2><p style="text-align: justify;"><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong><br />1. How do I use the builder interface</strong></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> Here's a quick 3 minute&nbsp;<u><a href="https://www.youtube.com/watch?v=Alvku9pKaI0&amp;t=" target="_blank" rel="noopener">tutorial video</a></u>&nbsp;to get you started.<br /></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> <strong>2. How do I create a form for capturing leads</strong></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> Use the Form Builder element in the interface. Here's a quick&nbsp;<u><a href="https://www.youtube.com/watch?v=Z_caZsJngQs" target="_blank" rel="noopener">overview</a></u></span></p><p><strong>3. How do I publish my landing page on my own custom domain</strong><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> Once you've designed the page, follow&nbsp;<u><a href="https://www.youtube.com/watch?v=TLvfq3Dn9a8&amp;t=41s" target="_blank" rel="noopener">these steps</a></u>&nbsp;and you're good to go!<br /></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> <strong>4. I'm facing issues while designing the landing page</strong></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> Simply write back to sunny@sunnylandingpages.com or chat with us through the interface<br /></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> <strong>5. Not sure, how I should go ahead with designing the page</strong></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> Sharing a few tips I personally recommend users to create a conversion ready landing page below</span></p><hr /><p style="text-align: justify;">&nbsp;</p><div style="text-align: justify;"><p><img class="alignnone size-large wp-image-885" src="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/pexels-photo-311458-Copya-1024x340.jpeg" alt="Design Tips" width="904" height="300" /></p></div><h2><span style="font-family: arial, helvetica, sans-serif;">Tips to Design Conversion Ready Landing Pages:</span></h2><p><span style="font-family: arial, helvetica, sans-serif;"><strong><br /></strong><strong style="font-size: 12pt; text-align: justify;">1. Less is More: </strong><span style="font-size: 12pt; text-align: justify;">TA cluttered page usually distracts customers. Keep the text and images simple and to the point. Use our content serctions or create your precise content format.</span></span></p><div style="text-align: justify;"><p><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"><strong>2. Ask Only What You Need:&nbsp;</strong>The fewer fields you have on the form, the better the conversion rate. The best balance is collecting information that is necessary to qualify your leads. Create precise&nbsp;forms with our easy to use Form Builder element.<br /></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> <strong>3.&nbsp;Match Landing Page with PPC ads:</strong>&nbsp;Match the words used in page copy with the keywords and text used in PPC ads. Repeating the same language and key phrases reassures visitors that they&rsquo;re on the right path and shows consistency.<br /></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> <strong>4. Make Your Page Mobile Friendly:</strong>&nbsp;Check your page on our instant responsive&nbsp;mobile preview mode.Your landing page should look and feel great on mobile devices &ndash; easy to navigate and&nbsp;ultra clickable.<br /></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> <strong>5. Use Images to direct Users to CTA:</strong>&nbsp;Images that&nbsp;draw attention to the call to action button or form help guide the visitor&rsquo;s eye to the most important thing on the whole page. Choose from our stock of 1 million FREE&nbsp;images</span></p></div><div style="text-align: justify;"><hr /><h2><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;">Build a Landing Page for WordPress</span></h2><p><span style="font-size: 12pt;">1. Install the&nbsp;<u><a href="https://wordpress.org/plugins/sunnylandingpages/" target="_blank" rel="noopener">plugin</a></u>&nbsp;on your wordpress site.<br /></span><br /><span style="font-size: 14pt;"><span style="font-size: 12pt;">2.&nbsp;Click on Download for the Zip file. OR, you can also&nbsp;directly install the plugin from your Plugins Dashboard by searching for Sunny Landing Pages<br /></span></span><br /><span style="font-size: 12pt;"> 3. Once installed, click on Sunny Landing Pages on the left menu.&nbsp;If you&rsquo;re a new user, you will be prompted to create a new account and the button will redirect you to the Sunny Landing Pages website. Otherwise existing users can login using their username and password. Now the next step is for you to build your landing page. I won&rsquo;t get into too much detail on that over here.<br /></span><br /><span style="font-size: 12pt;"> 4. Once your page is ready, you can click on Publish. The builder will prompt to choose a Publishing option &ndash; Either WordPress or Domain (WWW). Select WordPress<br /></span><br /><span style="font-size: 12pt;"> 5. Once you&rsquo;ve selected WordPress, you&rsquo;re now ready to head back to the Sunny Plugin dashboard in your&nbsp;WordPress&nbsp;admin section.&nbsp;You will see all your pages in&nbsp;our plugin page.&nbsp;By default, all pages are in Draft status.&nbsp;So there are two quick steps left to do.<br /></span><br /><span style="font-size: 12pt;"> 6. Finalize your URL. Click on Quick Edit and you will be able to change the URL to anything you want.&nbsp;Remember the URL can&rsquo;t be changed if your page type is &lsquo;homepage&rsquo; or &lsquo;404 page&rsquo;<br /></span><br /><span style="font-size: 12pt;"> 7.&nbsp;In the same screen change the status to 'Published'</span></p><p><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;">That&rsquo;s it. You&rsquo;re done! Your page will be live.</span></p><hr /><h2><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;">About the Sunny Landing Page Builder</span></h2></div><p style="text-align: justify;"><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;">Sunny is a drag and drop Landing Page Builder which lets you design, edit and publish landing pages in a jiffy.<br /></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> You can add or edit almost any landing page element you can think of such as headlines, paragraphs, bullet lists, images, backgrounds, call-to-action buttons, videos, shapes, maps, countdown timers and more.<br /></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> Choose from a vast template gallery and readymade sections (testimonials, pricing, team etc.) to get your site up and running in just a few minutes.<br /></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;">Once you have edited the page, you can publish using our domain or you can even use your own custom domain. If you don't want us to host the page then you can even download the HTML.<br /></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> The hosted service allows for integrations with all major CRM and email service providers (such as: AWeber, Mailchimp, Active Campaign, Campaign Monitor, Get Response, Mailer Lite etc.) directly through web sign up forms/ embed forms or through integrations using Zapier.<br /></span><br /><span style="font-family: arial, helvetica, sans-serif; line-height: 25px; font-size: 12pt;"> The service also provide you analytics &amp; lead management features to make managing your marketing funnel really easy.</span></p><div style="text-align: justify;"><hr /></div><div style="text-align: justify;"><h2><span style="font-family: arial, helvetica, sans-serif; line-height: 25px;">Read More:&nbsp;</span></h2><p><a href="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/cat-meme-hero-e1526035839640.png"><img class="alignnone size-full wp-image-846" src="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/cat-meme-hero-e1526035839640.png" alt="cat-meme-hero" width="240" height="96" /></a>&nbsp; &nbsp;&nbsp;<a href="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/create-content-e1526035893504.png"><img class="alignnone size-full wp-image-847" src="http://sunnylandingpages.com/blog/wp-content/uploads/2017/11/pixabay.png" alt="pixabay" width="240" height="96" /></a>&nbsp; &nbsp; &nbsp;<a href="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/version-control-e1526035921178.png"><img class="alignnone size-full wp-image-848" src="http://sunnylandingpages.com/blog/wp-content/uploads/2018/05/version-control-e1526035921178.png" alt="version-control" width="240" height="96" /></a></p><p><span style="font-size: 14pt;"><a href="../blog/9-ground-rules-for-crafting-compelling-content/" target="_blank" rel="noopener">9 Ground Rules for Crafting</a>&nbsp; &nbsp; &nbsp; &nbsp;<a href="../blog/now-can-get-pixabay-images-directly-within-landing-page-builder/">Get Pixabay Images within&nbsp;</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="../blog/version-control-landing-pages/">Version Control your</a></span><br /><span style="font-size: 14pt;">&nbsp; &nbsp; &nbsp;<a href="../blog/9-ground-rules-for-crafting-compelling-content/" target="_blank" rel="noopener">Compelling Content</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="../blog/now-can-get-pixabay-images-directly-within-landing-page-builder/">your Landing Pages</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="../blog/version-control-landing-pages/">Landing Pages</a></span></p></div>			</div>
+			<!-- WYSIWYG PAGE TEXT - END -->
+			<div class="col-md-1"></div>
+		</div>		
+	<div class="row">
+	<!-- RELATED TEMPLATES -->
+		<div class="col-md-1"></div>
+			<div class="col-md-10" style="padding-left:50px;padding-right:50px;margin-top:75px;">
+			
+				<h3 align="center">
+					Related Templates
+				</h3>				
+				<div class="row">
+										<div class="col-md-4 col-sm-6 col-xs-12">	
+						<!-- item -->
+						<div class="item-box">
+							<figure>
+								<a  href="
+								/landing-page-template/bitcoin-3"
+									>
+									<img class="img-responsive img-related" 
+										src="
+												https://dmpqsifgr4vyp.cloudfront.net/template/Bitcoin 3/image_thumbnail.png											" 
+										alt="">
+											
+								</a>
+							</figure>
+							<div class="item-box-desc">
+								<h4>Bitcoin 3									
+								</h4>
+									<p>A click through landing page template for use by bitcoin companies. Customized by editing images, text and other elements as required.</p>
+								
+							</div>
+							<div class="item-box-button">
+								<a class="btn btn-primary btn-lg temp-button" target="_blank" 
+									href="/landing-page-template/bitcoin-3">
+									View Template
+								</a>
+							</div>
+						</div>
+						<!-- /item -->
+					</div>
+					
+										<div class="col-md-4 col-sm-6 col-xs-12">	
+						<!-- item -->
+						<div class="item-box">
+							<figure>
+								<a  href="
+								/landing-page-template/bitcoin-2"
+									>
+									<img class="img-responsive img-related" 
+										src="
+												https://dmpqsifgr4vyp.cloudfront.net/template/Bitcoin 2/image_thumbnail.png											" 
+										alt="">
+											
+								</a>
+							</figure>
+							<div class="item-box-desc">
+								<h4>Bitcoin 2									
+								</h4>
+									<p>A lead gen bitcoin landing page template for use by bitcoin companies. Customized by editing images, text and other elements as required.</p>
+								
+							</div>
+							<div class="item-box-button">
+								<a class="btn btn-primary btn-lg temp-button" target="_blank" 
+									href="/landing-page-template/bitcoin-2">
+									View Template
+								</a>
+							</div>
+						</div>
+						<!-- /item -->
+					</div>
+					
+										<div class="col-md-4 col-sm-6 col-xs-12">	
+						<!-- item -->
+						<div class="item-box">
+							<figure>
+								<a  href="
+								/landing-page-template/dentist-3"
+									>
+									<img class="img-responsive img-related" 
+										src="
+												https://dmpqsifgr4vyp.cloudfront.net/template/Dentist 3/image_thumbnail.png											" 
+										alt="">
+											
+								</a>
+							</figure>
+							<div class="item-box-desc">
+								<h4>Dentist 3									
+								</h4>
+									<p>Another single screen dentist lead generation landing page template for the healthcare industry. Customize in the landing page builder.</p>
+								
+							</div>
+							<div class="item-box-button">
+								<a class="btn btn-primary btn-lg temp-button" target="_blank" 
+									href="/landing-page-template/dentist-3">
+									View Template
+								</a>
+							</div>
+						</div>
+						<!-- /item -->
+					</div>
+					
+										
+					
+				</div>
+				
+			</div>	
+			<!-- RELATED TEMPLATES -->
+			<div class="col-md-1"></div>
+			</div>
+			
+		
+
+</section>
+
+	</div>
+	<!-- FOOTER -->
+	<footer>
+
+		
+		<div style="min-height: 25px;background-color: rgb(105, 59, 183);box-shadow: 0 0 black;"></div>
+		<!-- footer content -->
+		<div class="footer-content" style="padding-top: 20px; padding-bottom:20px">
+			<div class="container">
+				<div class="row">
+					<!-- FOOTER CONTACT INFO -->
+					<div class="sp column col-md-3">
+						<h5><a href="/site/faqs">Landing Page FAQs</a></h5>
+			            <h5><a href="/payment/pricing">Pricing</a></h5>
+			            
+					</div>
+					<!-- /FOOTER CONTACT INFO -->
+					<div class="sp column col-md-3">
+						<h5><a href="/blog">Blog</a></h5>
+			            <h5><a href="http://affiliate.sunnylandingpages.com/">Affiliates</a></h5>
+			            
+					</div>
+					<div class="sp column col-md-3">
+						<h5><a href="/landing-page-templates/all">Templates</a></h5>
+			            <h5><a href="https://www.youtube.com/channel/UCBpbO97hB5hroaYm87fCSvw">YouTube Tutorials</a></h5>
+			            
+					</div>
+					<div class="sp column col-md-3">
+						<h5><a href="/site/termsconditions">Terms and Conditions</a></h5>
+			            <h5><a href="/site/contact">Contact Us</a></h5>
+			            
+					</div>
+					<div class="sp column col-md-3">
+						<h5><a href="/html-landing-page-builder">Landing Page HTML Code</a></h5>
+			            
+					</div>
+					<div class="sp column col-md-3">
+						<h5><a href="/wordpress-landing-pages-templates-and-builder">WordPress Landing Pages</a></h5>
+			            
+					</div>
+					<div class="sp column col-md-3">
+						<h5><a href="http://bpmonline.sunnylandingpages.com/">bpm'online Landing Pages</a></h5>
+			            
+					</div>
+					<div class="sp column col-md-3">
+						<h5><a href="/landing-page-migration">Landing Page Migration</a></h5>
+			            
+					</div>
+					<div class="sp column col-md-3">
+						<h5><a href="/site/emailtou">Email Terms of Use</a></h5>
+			            
+					</div>
+					<div class="sp column col-md-3">
+						<h5><a href="/site/emailpp">Email Privacy Policy</a></h5>
+			            
+					</div>
+					<div class="sp column col-md-3">
+						<h5><a href="/site/emailaup">Email Acceptable Use Policy</a></h5>
+			            
+					</div>
+					<div class="sp column col-md-3">
+						<h5><a href="/site/emailasp">Email Anti-Spam Policy</a></h5>
+			            
+					</div>
+					<div class="sp column col-md-3">
+						<h5><a href="/blog/Mastermind-Membership">Mastermind Membership</a></h5>
+						
+					</div>
+					<div class="clearfix"></div>
+					<hr>
+					<div class="container">
+						<p style="text-align: center;">
+							<span style="color: rgb(71, 85, 119); font-size:14px;">&copy; 2018 Sunny Landing Pages. All Rights Reserved.
+							</span>
+						</p>
+						
+					</div>
+					
+					<!-- /FOOTER LATEST POSTS -->
+				</div>
+			</div>
+		</div>
+		<!-- footer content -->
+	</footer>
+	<!-- /FOOTER -->
+	
+	<script src="/assets/98e1d357/jquery.js"></script>
+<script src="/assets/a198b08d/yii.js"></script>
+<script src="/assets/a198b08d/yii.validation.js"></script>
+<script src="/assets/a198b08d/yii.activeForm.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+jQuery('#login-form').yiiActiveForm([{"id":"login-form-login","name":"login","container":".field-login-form-login","input":"#login-form-login","validate":function (attribute, value, messages, deferred) {yii.validation.required(value, messages, {"message":"Login cannot be blank."});}},{"id":"login-form-password","name":"password","container":".field-login-form-password","input":"#login-form-password","validate":function (attribute, value, messages, deferred) {yii.validation.required(value, messages, {"message":"Password cannot be blank."});}}], []);
+});</script>	</body>
+	
+	<!-- JAVASCRIPT FILES -->
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/jquery.cookie.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/jquery.appear.js"></script>
+	<!--<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/jquery.isotope.js"></script>-->
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/masonry.js"></script>
+	<!-- dataTables js for use in analytics page -->
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/stellar/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/knob/js/jquery.knob.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/jquery.backstretch.min.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/superslides/dist/jquery.superslides.min.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/styleswitcher/styleswitcher.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/plugins/mediaelement/build/mediaelement-and-player.min.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/js/scripts.js"></script>
+	<script type="text/javascript" src="https://dmpqsifgr4vyp.cloudfront.net/themes/sunny/assets/js/jquery.scrollTo.min.js"></script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509104d9266a0f5e"></script>
+		<script type="text/javascript">
+$(document).ready(function(){
+	
+	$('#submit-login-form').click(function(){	
+		var data = $('#login-form').serialize();
+		$.ajax({
+			url: '/user/security/mainlogin',
+			type: 'post',
+			data: data,
+			success: function(response)
+	        {
+				if(response.status == 'success'){
+					//window.location.reload();
+					window.location.href = "/landing-page-template/coffee";
+				}
+				else{
+					$('.flash-error').html(response.error_msg);
+				}
+	        },
+	        error: function(e)
+	        {
+	        	$('.flash-error').html(e);
+	        },
+	        complete: function()
+	        {
+	        }
+		}); 
+		return false;
+	});
+	
+	$('#login-form input').keydown(function(e) {
+		if (e.keyCode == 13) {
+			var data = $('#login-form').serialize();
+			$.ajax({
+				url: '/user/security/mainlogin',
+				type: 'post',
+				data: data,
+				success: function(response)
+		        {
+					if(response.status == 'success'){
+						//window.location.reload();
+						window.location.href = "/landing-page-template/coffee";
+					}
+					else{
+						$('.flash-error').html(response.error_msg);
+					}
+		        },
+		        error: function(e)
+		        {
+		        	$('.flash-error').html(e);
+		        },
+		        complete: function()
+		        {
+		        }
+					
+			}); 
+			return false;
+		}
+	});
+	
+	
+		var table = $('#analyticsTable').DataTable({
+		  "columnDefs": [{
+			  "targets": -1,
+			  "data": null,
+			  "orderable": false,
+			  "className": 'details-control',
+			  "defaultContent": ''
+			}]
+		});
+	
+	
+
+	// Add event listener for opening and closing details
+	$('#analyticsTable tbody').on('click', 'td.details-control', function () {
+		var tr = $(this).closest('tr');
+		var row = table.row( tr );
+
+		if ( row.child.isShown() ) {
+			// This row is already open - close it
+			$('div.rdslider', row.child()).slideUp( function () {
+				row.child.hide();
+				tr.removeClass('shown');
+			});
+		}
+		else {
+			// Open this row
+			row.child( format(row.data()), 'no-padding thistr' ).show();
+			tr.addClass('shown');
+
+			$('div.rdslider', row.child()).slideDown();
+		}
+	});
+
+	function format ( d ) {
+		// `d` is the original data object for the row
+		return '<div class="rdslider">'+
+					'<div class="rdheading">Details</div>'+
+					'<div class="rdlead">'+d[9]+'</div>'+
+					'<div>'+d[10]+'</div>'+
+					'<div>'+d[11]+'</div>'+
+				'</div>';
+	}
+
+	$('#reportrange').on('apply.daterangepicker', function(ev, picker) {
+	var start = picker.startDate.format('YYYY-MM-DD');
+	var end = picker.endDate.format('YYYY-MM-DD');
+	
+	var urlpath = window.location.href.split('?')[0];
+	var selector = window.location.search.replace("?", "").split("&")[0];
+	location = urlpath+'?'+selector+'&s='+start+'&e='+end;
+});
+$('#reportrangeall').on('apply.daterangepicker', function(ev, picker) {
+	var start = picker.startDate.format('YYYY-MM-DD');
+	var end = picker.endDate.format('YYYY-MM-DD');
+	
+	var urlpath = window.location.href.split('?')[0];
+	var selector = window.location.search.replace("?", "").split("&")[0];
+	location = urlpath+'?'+selector+'&s='+start+'&e='+end;
+});
+
+$("#gotocreaterefer").click(function(){ $("#refer-friend-popup-first").modal('hide');$("#refer-friend-popup").modal('show');  });
+$("#refer-friend").click(function(){ $("#"+$(this).attr('data-target')).modal('show'); });
+
+$("#submit-refer-friend").submit(function(e){
+		e.preventDefault();
+		var idevpassword = $("#refer-friend-password").val();
+		var idevpaypalemail = $("#refer-friend-paypal").val();
+		var idevusername = $("#refer-friend-username").val();
+		var slpuseremail = "";
+		var ispaypal = 0;
+		var slpname = "";
+		
+		if(!slpname){
+			slpname = slpuseremail.split("@");
+			slpname = slpname[0].replace(/[^a-zA-Z]/g,'');
+		}
+		
+		if(idevpaypalemail){
+			ispaypal = 1;	
+		}
+		
+		if(idevpassword){
+			var settings = {
+			  "async": true,
+			  "crossDomain": true,
+			  "url": "https://idevaffiliate.sunnylandingpages.com/API/scripts/new_affiliate.php?secret=1029137221&username="+idevusername+"&password="+idevpassword+"&email="+slpuseremail+"&paypal_account="+idevpaypalemail+"&approved=1&use_paypal="+ispaypal+"&first_name="+slpname,
+			  "method": "POST",
+			  "dataType": 'jsonp',
+			  "headers": {
+				"cache-control": "no-cache",
+				"Postman-Token": "c7eaa307-9447-4d84-b478-88740b8555b7",
+				"Access-Control-Allow-Origin": "*"
+			  }
+			}
+
+			$.ajax(settings).success(function (response) {
+				 post_data = {
+					'idevusername'      : idevusername,
+	                '_csrf'			: 'NUhYWmxDRzFQDQc7KCdwSGotLxUoAQ5bQWU9Py5zLkQCDjE.MyY.Ww=='
+	            };
+				$.ajax({
+						url: '/account/saveidevusername',
+						type: 'post',
+						data: post_data,
+						success: function(response)
+						{
+							if(response.status == 'success'){						
+								$("#refer-friend-popup").modal('hide');
+								//$(".refer-friend-popup-first").modal('hide');
+								$("#refer-friend-popup-last").modal('show');																
+							}
+							else{
+								console.log('idev name not saved in slp');
+							}
+						},
+						error: function(e)
+						{
+							console.log('idev name not saved in slp');
+						}					
+				}); 
+			}).error(function (response) {
+				 post_data = {
+					'idevusername'      : idevusername,
+	                '_csrf'			: 'NUhYWmxDRzFQDQc7KCdwSGotLxUoAQ5bQWU9Py5zLkQCDjE.MyY.Ww=='
+	            };
+				$.ajax({
+						url: '/account/saveidevusername',
+						type: 'post',
+						data: post_data,
+						success: function(response)
+						{
+							if(response.status == 'success'){						
+								$("#refer-friend-popup").modal('hide');
+								//$(".refer-friend-popup-first").modal('hide');
+								$("#refer-friend-popup-last").modal('show');									
+							}
+							else{
+								console.log('idev name not saved in slp');
+							}
+						},
+						error: function(e)
+						{
+							console.log('idev name not saved in slp');
+						}					
+				}); 
+			});
+		}else{
+			alert('password required');
+		}
+	});
+	
+	var isguest = '1';
+	var idevseolink = 'https://sunnylandingpages.com/slp/';
+	
+	if(!isguest){
+		var getidevusername = "";
+		if(getidevusername){
+			$("#refer-friend-username").val(getidevusername);
+			$(".refer-friend-url").html("<span>"+idevseolink+getidevusername+".html</span>");
+			$(".addthis_inline_share_toolbox").attr('data-url',idevseolink+getidevusername+".html");
+			$("#refer-friend").attr("data-target","refer-friend-popup-last");
+		}else{
+			 post_data = {
+						'_csrf'			: 'NUhYWmxDRzFQDQc7KCdwSGotLxUoAQ5bQWU9Py5zLkQCDjE.MyY.Ww=='
+					};
+			$.ajax({
+					url: '/account/generateidevusername',
+					type: 'post',
+					data: post_data,
+					success: function(response)
+					{
+						if(response.status == 'success'){						
+							var idevusernamegenerate = response.idevusernamegenerate;
+							$("#refer-friend-username").val(idevusernamegenerate);
+							$(".refer-friend-url").html(idevseolink+idevusernamegenerate+".html");
+							$(".addthis_inline_share_toolbox").attr('data-url',idevseolink+idevusernamegenerate+".html");
+						}
+						else{
+							$("#refer-friend").hide();
+						}
+					},
+					error: function(e)
+					{
+						$("#refer-friend").hide();
+					}					
+			}); 		
+		}
+	}
+	
+	
+
+});
+
+</script>
+
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>APPLFY (Kategoriler)</title>
+        <link rel="stylesheet" href="Css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Start Landing Page Section -->
+
+        <div class="hoverTop">
+            <i class="fa fa-arrow-up fa-1x arow"></i>
+        </div>
+
+        <div class="LoadingPage">
+            <img src="Images/loading-image.jpg" class="loading-image">
+            <div class="loading-page">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <span class="loading">Yükleniyor...</span>
+            </div>
+        </div>
+        
+        <div class="scroller"></div>
+        <div class="left-section">
+            <h1 class="dashboard">Ana</h1>
+            <div class="title">
+                <a href="#">
+                    <img src="Images/logo.webp" alt="">
+                    <span class="title-header">Applfy.</span>
+                </a>
+            </div>
+            <div class="box-light">
+                <div class="dark">
+                    <i class="fa fa-moon-o"></i>
+                </div>
+                <div class="light">
+                    <i class="fa fa-sun-o"></i>
+                </div>
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-th-large"></i>
+                        Hakkýmýzda
+                    </a>
+                </li>
+                <li>
+                    <a href="index.htm">
+                        <i class="fa fa-bar-chart"></i>
+                        Ýstatistik
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-pie-chart"></i>
+                        Eyaletlerimiz
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-cogs"></i>
+                        Hizmetler
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-clipboard-check"></i>
+                        Bizim isimiz
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-envelope"></i>
+                        bize Ulaþýn
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <i class="fas fa-folder-open"></i>
+                        Kategoriler
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html" class="plans">
+                        <i class="fas fa-sitemap"></i>
+                        planlar
+                    </a>
+                </li>
+            </ul>
+            <img class="image-last" src="Images/upgrade.webp" alt="">
+        </div>
+        <div class="right-main-section">
+            <div class="main-section">
+                <div class="header cate-header">
+                    <h1 class="dashboard">Ana</h1>
+                    <div class="title title-none">
+                        <a href="#">
+                            <img src="Images/logo.webp" alt="">
+                            <span class="title-header">Applfy.</span>
+                        </a>
+                    </div>
+                    <div class="search-input">
+                        <a href="#" class="search-icon">
+                            <i class="fa fa-search"></i>
+                        </a>
+                        <input type="search" placeholder="Ara" class="input">
+                    </div>
+                    <div class="language-box">
+                        <i class="fa fa-language setting fa-2x"></i>
+                        <ul class="language">
+                            <li><a href="#"><img src="Images/sa.svg" alt="">Arabic</a></li>
+                            <li><a href="#"><img src="Images/gb.svg" alt=""> English</a></li>
+                            <li><a href="#"><img src="Images/tr.svg" alt=""> Turkish</a></li>
+                        </ul>
+                    </div>
+                    <div class="box-light">
+                        <div class="dark">
+                            <i class="fa fa-moon-o"></i>
+                        </div>
+                        <div class="light">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                    </div>
+                    <div class="closeOpen-button">
+                        <div class="section1"></div>
+                        <div class="section2"></div>
+                        <div class="section3"></div>
+                    </div>
+                </div>
+                <div class="title-caty">
+                    <h2 class="main-title">Barýndýrma</h2>
+                </div>
+                <div class="categoreis">
+                    <div class="category-box">
+                        <div class="price-box">
+                            <h3>Küçük</h3>
+                            <p>$100</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <i class="fa fa-check"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa red fa-xmark"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa red fa-xmark"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa fa-check"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa red fa-xmark"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa fa-check"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="join">Join</a>
+                    </div>
+                    <div class="category-box">
+                        <div class="price-box">
+                            <h3>Küçük</h3>
+                            <p>$100</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <i class="fa fa-check"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa red fa-xmark"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa red fa-xmark"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa fa-check"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa red fa-xmark"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa fa-check"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="join">Join</a>
+                    </div>
+                    <div class="category-box">
+                        <div class="price-box">
+                            <h3>Küçük</h3>
+                            <p>$100</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <i class="fa fa-check"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa red fa-xmark"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa red fa-xmark"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa fa-check"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa red fa-xmark"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa fa-check"></i>
+                                <span>Tüm Metin Derslerine Eriþir</span>
+                                <div class="icons">
+                                    <a href="#" class="parag">Detaylar <i class="fa fa-arrow-right"></i></a>
+                                    <i class="help fa fa-circle-info"></i>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="join">Join</a>
+                    </div>
+                </div>
+                <div class="inspiration">
+                    <div class="title-caty">
+                        <h2 class="main-title">Biraz Ýlham</h2>
+                    </div>
+                    <div class="box-inspiration">
+                        <a href="Images/inspirations/coffe page.png">
+                            <img src="Images/inspirations/coffe page.png" alt="Coffee Shop">
+                        </a>
+                        <a href="Images/inspirations/hotel page.png">
+                            <img src="Images/inspirations/hotel page.png" alt="Nice Hotel">
+                        </a>
+                        <a href="Images/inspirations/real estate.png">
+                            <img src="Images/inspirations/real estate.png" alt="Real Estate">
+                        </a>
+                        <a href="Images/inspirations/resturant page.png">
+                            <img src="Images/inspirations/resturant page.png" alt="Restaurant">
+                        </a>
+                        <a href="Images/inspirations/menu-resturant.png">
+                            <img src="Images/inspirations/menu-resturant.png" alt="Menu-Restaurant">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-section">
+                <div class="profile">
+                    <i class="question fa fa-question-circle-o fa-2x"></i>
+                    <i class="fa fa-language setting fa-2x"></i>
+                    <img src="Images/user-1.webp" alt="">
+                    <i class="list fa fa-angle-down"></i>
+                </div>
+                <p class="message">Bizimle Ýletiþime Geçmek Ýster misiniz?!<a href="" class="clickHere">Buraya týklayýn</a></p>
+                <ul class="language">
+                    <li><a href="ar_categoreis.html"><img src="Images/sa.svg" alt="">Arabic</a></li>
+                    <li><a href="categoreis.html"><img src="Images/gb.svg" alt=""> English</a></li>
+                    <li><a href="#"><img src="Images/tr.svg" alt=""> Turkish</a></li>
+                </ul>
+                <ul class="listes">
+                    <li><a href="#"><i class="fa fa-user-circle"></i>profilim</a></li>
+                    <li><a href="#"><i class="fa fa-question-circle"></i> Ayarlar</a></li>
+                    <li><a href="#"><i class="fa fa-gears"></i>Yardýma ?</a></li>
+                    <li><a href="#"><i class="fa fa-sign-out-alt"></i>Çýkýþ</a></li>
+                </ul>
+                <div class="image-header">
+                    <img src="Images/user-2.webp" alt="">
+                    <p>Ahmad Shahm Sardini</p>
+                    <span>Ön Uç Geliþtirici</span>
+                    <p class="location"><i class="fa fa-map-marker"></i>Iatanbul, TR</p>
+                </div>
+                <div class="jobs-header">
+                    <h3>Tasarýmýnýzý Seçin</h3>
+                    <div class="box-add">
+                        <i class="add">+ Ekle</i>
+                        <i class="go fa fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="toggler">
+                    <div class="box">
+                        <div class="text">
+                            <p class="num">95</p>
+                            <p class="paragraph">Android geliþtiricisi
+                                <span>Toplam Baþvurular</span>
+                            </p>
+                        </div>
+                        <div class="toggle-switch">
+                            <div class="toggle-handl"></div>
+                        </div>
+                    </div>
+                    <div class="box box1">
+                        <div class="text text1">
+                            <p class="num num1">80</p>
+                            <p class="paragraph paragraph1">UX/UI tasarýmcý
+                                <span>Toplam Baþvurular</span>
+                            </p>
+                            <div class="toggle-switch">
+                                <div class="toggle-handl toggle-handl1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="files-statistics">
+                    <h3>Dosya Ýstatistikleri</h3>
+                    <div class="file-box">
+                        <i class="pdf pdf1 fa fa-file-code"></i>
+                        <div class="info">
+                            <span>PDF Dosyalar</span>
+                            <span class="number">130</span>
+                        </div>
+                        <div class="size">6.5GB</div>
+                    </div>
+                    <div class="file-box">
+                        <i class="pdf pdf2 fa fa-image"></i>
+                        <div class="info">
+                            <span>Görseller</span>
+                            <span class="number">115 Dosyalar</span>
+                        </div>
+                        <div class="size">3.5GB</div>
+                    </div>
+                    <div class="file-box">
+                        <i class="pdf pdf3 fa fa-file-word"></i>
+                        <div class="info">
+                            <span>Word Dosyalar</span>
+                            <span class="number">110 Dosyalar</span>
+                        </div>
+                        <div class="size">3.2GB</div>
+                    </div>
+                    <div class="file-box">
+                        <i class="pdf pdf4 fa fa-file-excel"></i>
+                        <div class="info">
+                            <span>CSV Dosyalar</span>
+                            <span class="number">99 Dosyalar</span>
+                        </div>
+                        <div class="size">2.9GB</div>
+                    </div>
+                    <a class="button-upload" href="#">
+                        <i class="fa fa-angles-up"></i>
+                        Yüklemek
+                    </a>
+                </div>
+                <div class="reminders-box">
+                    <div class="head">
+                        <h3>Hatýrlatýcýlar</h3>
+                        <i class="fa fa-bell-o"></i>
+                    </div>
+                        <div class="line file-box">
+                            <i class="pdf pdf1 icon1 fa fa-arrow-rotate-right"></i>
+                            <div class="info">
+                                <span>Aboneliðiniz bugün sona eriyor.
+                                    <p>Þimdi Yenile </p>
+                                </span>
+                            </div>
+                            <div class="size">6:30PM</div>
+                        </div>
+                        <div class="line file-box">
+                            <i class="pdf pdf1 icon2 fa fa-address-book-o"></i>
+                            <div class="info">
+                                <span>için 4 yeni Uygulama var
+                                    IOS Geliþtirici Yazýsý.</span>
+                            </div>
+                            <div class="size">6:30PM</div>
+                        </div>
+                        <div class="line file-box">
+                            <i class="pdf pdf1 icon3 fa fa-cancel"></i>
+                            <div class="info">
+                                <span>Þunun için iþ ilanýný kapattýnýz:
+                                    Tasarým yükü.</span>
+                            </div>
+                            <div class="size">6:30PM</div>
+                        </div>
+                        <div class="line file-box">
+                            <i class="pdf pdf1 icon4 fa fa-folder-open-o"></i>
+                            <div class="info">
+                                <span>Þunun için iþ gönderisini hazýrladýnýz:
+                                    Web Geliþtiricisi.</span>
+                            </div>
+                            <div class="size">6:30PM</div>
+                        </div>
+                </div>
+                <div class="dont-remind">
+                    <div class="remind-boxes">
+                        <div class="remind-box">
+                            <img src="Images/icon.png" alt="">
+                        </div>
+                        <div class="remind-box">
+                            <i class="fa fa-map-marker"></i>
+                            <p>Türkiye, Istanbul, Esenyurt...</p>
+                            <i class="fa fa-clock-o"></i>
+                            <p>Çalýþma Saatleri: 10:00 - 18:00</p>
+                        </div>
+                        <div class="remind-box">
+                            <div class="toContactUs">
+                                <i class="fa fa-hand-point-left toContactUs"></i>
+                                <span>Bizimle Ýletiþime Geçmeyi Unutmayýn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wisdom">
+                    <h2>Bugünün Bilgeliði</h2>
+                    <div class="box-wisdom">
+                        <p>&lsquo;Ayaklarýnýzýn Üzerinde Durmaya Çalýþtýðýnýz Sürece Baþarýsýz Olduðunuz Ýçin Üzülmeyin.&rsquo;</p>
+                        <hr>
+                        <p>&lsquo;Bir Kiþi Ne Kadar Kültürlü Olursa, Sefaleti O Kadar Büyük Olur.&rsquo;</p>
+                        <hr>
+                        <p>&lsquo;Umutsuzluða kapýlma, Dileklerin Büyük Olsa da Dua Karþýsýnda Küçülür.&rsquo;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- End Landing Page Section -->
+        <script src="Js/frameWork.js"></script>
+        <script src="Js/categories.js"></script>
+    </body>
+</html>

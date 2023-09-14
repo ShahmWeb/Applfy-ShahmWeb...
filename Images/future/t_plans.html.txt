@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>APPLFY (Planlar)</title>
+        <link rel="stylesheet" href="Css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Start Landing Page Section -->
+
+        <div class="hoverTop">
+            <i class="fa fa-arrow-up fa-1x arow"></i>
+        </div>
+
+        <div class="LoadingPage">
+            <img src="Images/loading-image.jpg" class="loading-image">
+            <div class="loading-page">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <span class="loading">Yükleniyor...</span>
+            </div>
+        </div>
+
+        <div class="scroller"></div>
+        <div class="left-section">
+            <h1 class="dashboard">Ana</h1>
+            <div class="title">
+                <a href="#">
+                    <img src="Images/logo.webp" alt="">
+                    <span class="title-header">Applfy.</span>
+                </a>
+            </div>
+            <div class="box-light">
+                <div class="dark">
+                    <i class="fa fa-moon-o"></i>
+                </div>
+                <div class="light">
+                    <i class="fa fa-sun-o"></i>
+                </div>
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-th-large"></i>
+                        Hakkýmýzda
+                    </a>
+                </li>
+                <li>
+                    <a href="index.htm">
+                        <i class="fa fa-bar-chart"></i>
+                        Ýstatistik
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-pie-chart"></i>
+                        Eyaletlerimiz
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-cogs"></i>
+                        Hizmetler
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-clipboard-check"></i>
+                        Bizim isimiz
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-envelope"></i>
+                        bize Ulaþýn
+                    </a>
+                </li>
+                <li>
+                    <a href="categoreis.html" class="category">
+                        <i class="fas fa-folder-open"></i>
+                        Kategoriler
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html" class="plans active">
+                        <i class="fas fa-sitemap"></i>
+                        planlar
+                    </a>
+                </li>
+            </ul>
+            <img class="image-last" src="Images/upgrade.webp" alt="">
+        </div>
+        <div class="right-main-section">
+            <div class="main-section">
+                <div class="header plans-header">
+                    <h1 class="dashboard">Ana</h1>
+                    <div class="title title-none">
+                        <a href="#">
+                            <img src="Images/logo.webp" alt="">
+                            <span class="title-header">Applfy.</span>
+                        </a>
+                    </div>
+                    <div class="search-input">
+                        <a href="#" class="search-icon">
+                            <i class="fa fa-search"></i>
+                        </a>
+                        <input type="search" placeholder="Ara" class="input">
+                    </div>
+                    <div class="language-box">
+                        <i class="fa fa-language setting fa-2x"></i>
+                        <ul class="language">
+                            <li><a href="#"><img src="Images/sa.svg" alt="">Arabic</a></li>
+                            <li><a href="#"><img src="Images/gb.svg" alt=""> English</a></li>
+                            <li><a href="#"><img src="Images/tr.svg" alt=""> Turkish</a></li>
+                        </ul>
+                    </div>
+                    <div class="box-light">
+                        <div class="dark">
+                            <i class="fa fa-moon-o"></i>
+                        </div>
+                        <div class="light">
+                            <i class="fa fa-sun-o"></i>
+                        </div>
+                    </div>
+                    <div class="closeOpen-button">
+                        <div class="section1"></div>
+                        <div class="section2"></div>
+                        <div class="section3"></div>
+                    </div>
+                </div>
+                <div class="Plans-strategies">
+                    <h2 class="main-title">Planlar ve stratejiler</h2>
+                    <div class="plans-strat-container">
+                        <div class="box-palans" data-work="iþletme çalýþmasý">
+                            <h3 class="title-descr">iþletme çalýþmasý</h3>
+                            <div class="contetn-palns" data-work="iþletme çalýþmasý">
+                                <img src="Images/work-01.jpg" alt="Siteye dahil etmek için iþinizi, ürün türünüzü ve içeriðinizi inceliyoruz ve hedef kitlenizi inceliyoruz">
+                                <!-- <p>We study your business, type of products, and content to include it on the site and study your audience</p> -->
+                            </div>
+                        </div>
+                        <div class="box-palans">
+                            <h3 class="title-descr">Eylem planla</h3>
+                            <div class="contetn-palns" data-work="Eylem planla">
+                                <img src="Images/work-02.jpg" alt="Sitenin renklerini, bina sayfalarýnýn planýný ve ana tasarýmý kontrol ettiðimiz bir plan ve çalýþma mekanizmasý geliþtirmek">
+                                <!-- <p>Developing a plan and work mechanism, where we check the colors of the site, the plan for building pages, and the main design </p> -->
+                            </div>
+                        </div>
+                        <div class="box-palans">
+                            <h3 class="title-descr">Uygulama ve tasarým</h3>
+                            <div class="contetn-palns" data-work="Uygulama ve tasarým">
+                                <img src="Images/work-03.jpg" alt="Sitenin aktifliðine ve site içeriðine uyumlu tasarýma göre tasarým çalýþmalarý yapýyor ve en çekici dokunuþlarý koyuyoruz.">
+                                <!-- <p>We work on the design according to the activity of the site and the design compatible with the contents of the site and put the most attractive touches</p> -->
+                            </div>
+                        </div>
+                        <div class="box-palans">
+                            <h3 class="title-descr">Tamamlama ve teslimat</h3>
+                            <div class="contetn-palns" data-work="Tamamlama ve teslimat">
+                                <img src="Images/work-04.jpg" alt="Teslimattan önce herhangi bir sorun olmadýðýný ve siteyi eksiksiz olarak yeniden inceleyin ve sitenin doðru olduðundan emin olun">
+                                <!-- <p>Verify that there are no problems and re-examine the site completely before delivery, and ensure that the site is correct</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dont-remind strat">
+                    <div class="remind-boxes strat">
+                        <div class="remind-box">
+                            <img src="Images/icon.png" alt="">
+                        </div>
+                        <div class="remind-box">
+                            <i class="fa fa-map-marker"></i>
+                            <p>Türkiye, Istanbul, Esenyurt...</p>
+                        </div>
+                        <div class="remind-box">
+                            <i class="fa fa-clock-o"></i>
+                            <p>Çalýþma Saatleri: 10:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <div class="facebook">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="whatsupp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="telegram">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-section">
+                <div class="profile">
+                    <i class="question fa fa-question-circle-o fa-2x"></i>
+                    <i class="fa fa-language setting fa-2x"></i>
+                    <img src="Images/user-1.webp" alt="">
+                    <i class="list fa fa-angle-down"></i>
+                </div>
+                <p class="message">Bizimle Ýletiþime Geçmek Ýster misiniz?!<a href="" class="clickHere">Buraya týklayýn</a></p>
+                <ul class="language">
+                    <li><a href="ar_plans.html"><img src="Images/sa.svg" alt="">Arabic</a></li>
+                    <li><a href="plans.html"><img src="Images/gb.svg" alt=""> English</a></li>
+                    <li><a href="#"><img src="Images/tr.svg" alt=""> Turkish</a></li>
+                </ul>
+                <ul class="listes">
+                    <li><a href="#"><i class="fa fa-user-circle"></i>profilim</a></li>
+                    <li><a href="#"><i class="fa fa-question-circle"></i> Ayarlar</a></li>
+                    <li><a href="#"><i class="fa fa-gears"></i>Yardýma ?</a></li>
+                    <li><a href="#"><i class="fa fa-sign-out-alt"></i>Çýkýþ</a></li>
+                </ul>
+                <div class="image-header">
+                    <img src="Images/user-2.webp" alt="">
+                    <p>Ahmad Shahm Sardini</p>
+                    <span>Ön Uç Geliþtirici</span>
+                    <p class="location"><i class="fa fa-map-marker"></i>Iatanbul, TR</p>
+                </div>
+                <div class="jobs-header">
+                    <h3>Tasarýmýnýzý Seçin</h3>
+                    <div class="box-add">
+                        <i class="add">+ Ekle</i>
+                        <i class="go fa fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="wisdom">
+                    <h2>Bugünün Bilgeliði</h2>
+                    <div class="box-wisdom">
+                        <p>&lsquo;Ayaklarýnýzýn Üzerinde Durmaya Çalýþtýðýnýz Sürece Baþarýsýz Olduðunuz Ýçin Üzülmeyin.&rsquo;</p>
+                        <hr>
+                        <p>&lsquo;Bir Kiþi Ne Kadar Kültürlü Olursa, Sefaleti O Kadar Büyük Olur.&rsquo;</p>
+                        <hr>
+                        <p>&lsquo;Umutsuzluða kapýlma, Dileklerin Büyük Olsa da Dua Karþýsýnda Küçülür.&rsquo;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- End Landing Page Section -->
+        <script src="Js/frameWork.js"></script>
+        <script src="Js/plans.js"></script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+=====================
+== What You Need ? ==
+=====================
+
+- HTML, HTML5
+- CSS, CSS3
+- JavaScript + ES6 + DOM
+- jQuery
+
+==========
+== Nots ==
+==========
+
+- No FrameWork
+- Vanilla JavaScript
+- Many Plugins
+- jQuery For Plugins
+- UI/UX Sketches
+- Mind Mapping
+- My VS Code Extensions
+- No Sass
+- No Pugjs

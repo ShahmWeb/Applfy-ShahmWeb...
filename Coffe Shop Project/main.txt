@@ -1,0 +1,112 @@
+<div class="product-box sada">
+    <img src="images/productes1.jpg" alt="">
+    <div class="info">
+        <p>٢٥٠ غرام</p>
+        <p>بن هال اكسترا</p>
+    </div>
+    <div class="price">
+        <i class="fa fa-arrow-right-long"></i>
+        <span>75 TR</span> /
+        <span>توصيل مجاني</span>
+        <i class="fa fa-arrow-left-long"></i>
+    </div>
+    <div class="packet">
+        <span>إضافة للسلة</span>
+        <i class="fa fa-cart-arrow-down"></i>
+    </div>
+</div>
+
+
+<div class="product-box hal-wast">
+    <img src="images/productes2.jpg" alt="">
+    <div class="info">
+        <p>٢٥٠ غرام</p>
+        <p>بن هال اكسترا</p>
+    </div>
+    <div class="price">
+        <i class="fa fa-arrow-right-long"></i>
+        <span>70 TR</span> /
+        <span>توصيل مجاني</span>
+        <i class="fa fa-arrow-left-long"></i>
+    </div>
+    <div class="packet">
+        <span>إضافة للسلة</span>
+        <i class="fa fa-cart-arrow-down"></i>
+    </div>
+</div>
+
+
+<div class="product-box hal-extra">
+    <img src="images/productes3.jpg" alt="">
+    <div class="info">
+        <p>٢٥٠ غرام</p>
+        <p>بن هال وسط</p>
+    </div>
+    <div class="price">
+        <i class="fa fa-arrow-right-long"></i>
+        <span>65 TR</span> /
+        <span>توصيل مجاني</span>
+        <i class="fa fa-arrow-left-long"></i>
+    </div>
+    <div class="packet">
+        <span>إضافة للسلة</span>
+        <i class="fa fa-cart-arrow-down"></i>
+    </div>
+</div>
+
+
+<div class="product-box hal-colompy">
+    <img src="images/productes4.jpg" alt="">
+    <div class="info">
+        <p>٢٥٠ غرام</p>
+        <p>بن سادة</p>
+    </div>
+    <div class="price">
+        <i class="fa fa-arrow-right-long"></i>
+        <span>60 TR</span> /
+        <span>توصيل مجاني</span>
+        <i class="fa fa-arrow-left-long"></i>
+    </div>
+    <div class="packet">
+        <span>إضافة للسلة</span>
+        <i class="fa fa-cart-arrow-down"></i>
+    </div>
+</div>
+
+
+<div class="product-box exprise">
+    <img src="images/productes7.jpg" alt="">
+    <div class="info">
+        <p>٢٥٠ غرام</p>
+        <p>بن اكسبريس</p>
+    </div>
+    <div class="price">
+        <i class="fa fa-arrow-right-long"></i>
+        <span>55 TR</span> /
+        <span>توصيل مجاني</span>
+        <i class="fa fa-arrow-left-long"></i>
+    </div>
+    <div class="packet">
+        <span>إضافة للسلة</span>
+        <i class="fa fa-cart-arrow-down"></i>
+    </div>
+</div>
+
+
+<div class="product-box arabye">
+    <img src="images/productes6.jpg" alt="">
+    <div class="info">
+        <p>٢٥٠ غرام</p>
+        <p>قهوة عربية جاهزة</p>
+    </div>
+    <div class="price">
+        <i class="fa fa-arrow-right-long"></i>
+        <span>50 TR</span> /
+        <span>توصيل مجاني</span>
+        <i class="fa fa-arrow-left-long"></i>
+    </div>
+    <div class="packet">
+        <span>إضافة للسلة</span>
+        <i class="fa fa-cart-arrow-down"></i>
+    </div>
+</div>
